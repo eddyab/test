@@ -365,4 +365,6 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_YzHqAKBVEei0eabqj3vx0g" login="eddyab2@wm.com" firstName="ab2" lastName="eddy" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_AG5rEKBZEeigyvRbEiYw4w" login="eddyab@wm.com" firstName="eddy" lastName="ab" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_qciKYaCaEeiwpLdUIIsvCQ" login="eddydev@wm.com" firstName="dev" lastName="eddy" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_qciKYqCaEeiwpLdUIIsvCQ" login="eddyfb@wm.com" firstName="Fachbereich" lastName="Eddy" type="DI" additionnalData="{}"/>
 </xmi:XMI>
