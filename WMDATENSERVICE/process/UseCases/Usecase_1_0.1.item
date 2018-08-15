@@ -311,9 +311,9 @@
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen]" incomingConnections="//@node.5/@nodeData/@connections.10" name="PRIIPKennzeichen" type="id_Character" xpath="CSV/PRIIPKennzeichen"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden]" incomingConnections="//@node.5/@nodeData/@connections.11" name="AktuellesKIDvorhanden" type="id_Boolean" xpath="CSV/AktuellesKIDvorhanden"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung]" incomingConnections="//@node.5/@nodeData/@connections.12" name="ARTKIDGenerierung" type="id_Integer" xpath="CSV/ARTKIDGenerierung"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion]" incomingConnections="//@node.5/@nodeData/@connections.13" name="KIDVersion" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="CSV/KIDVersion"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion]" incomingConnections="//@node.5/@nodeData/@connections.13" name="KIDVersion" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="CSV/KIDVersion"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion]" incomingConnections="//@node.5/@nodeData/@connections.14" name="KIDSprachversion" type="id_String" xpath="CSV/KIDSprachversion"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung]" incomingConnections="//@node.5/@nodeData/@connections.15" name="KIDDatumAktualisierung" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="CSV/KIDDatumAktualisierung"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung]" incomingConnections="//@node.5/@nodeData/@connections.15" name="KIDDatumAktualisierung" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="CSV/KIDDatumAktualisierung"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland]" incomingConnections="//@node.5/@nodeData/@connections.16" name="KIDBestimmungsland" type="id_String" xpath="CSV/KIDBestimmungsland"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink]" incomingConnections="//@node.5/@nodeData/@connections.17" name="HerstellerLink" type="id_String" xpath="CSV/HerstellerLink"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/SRIAktuellesKID]" incomingConnections="//@node.5/@nodeData/@connections.18" name="SRIAktuellesKID" type="id_Integer" xpath="CSV/SRIAktuellesKID"/>
@@ -462,13 +462,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9e87c1d0-6082-4064-840a-f9e46603cfb6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EX1LKZl2fj2mvYv5Z7i6CSdhznHCF7b/jwaG1pfwEfyIOxtW26ulDYzsQn5G835s7yxIcV35CAIX
-GsY57VMupA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1bf9029c-bb9d-47c1-90b0-96326205d0a6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>861uJcIxRpb05AHnokaSE+Hs5mjUA3pQ2vs7Z6aZAZAGLkM0cs2OrLpGzTsmHw7/JNr8igovcHp7
-6wZyVxAfIg==</DigestValue></Reference></SignedInfo><SignatureValue>DNaWox+Du13qngSkfe8J9uUU7fzjI1zARGl4R+nt0huerEK01pt0wO2pNH+f9F/MRl74BbHFmddc
-ZLAJuhObAs1Mut7daSZgCLrh/8Y/C2yJxbAwTVQWLwDCFeP9SU6K0kfu+krtO0k8ROTS+W8JwIFu
-KQZI94p9eu5I18H73bBuQogG/vqkxlqZGbaetP+ES/CtbDNUnEAKbXsQ+K9kvtes0/aJVOs9h5fC
-9UrEqBKNah2Q0ToQRXqIRZ/n+dbc3uHqwQhVDbo2kayJcH+Fdb2WETmNaj/SH9NrSW4deioPnN8b
-e4lma5vmy3tIm2EA/sJBQuNgeemIsi+zI9mVFA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1f954be0-86e5-43bb-8252-d221d5e651a9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I++NEoR0gWT/X1Qddi0Z4OshifFGflK4UsltGHuJC9eLUpfQnbEmAkjLQkoGbT2h1VlWpWaq0NC9
+2LTSuUz4ow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0e09b547-e836-4175-9071-f024166e63a3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k1+O9Ilh+ikcLZ/0oTbXOs8MRqQgLGwJi+/mepDR2w+QyFwU2PB2j7eHPNHuQYbPg2+D9hTV6ll/
+5uIELxH08A==</DigestValue></Reference></SignedInfo><SignatureValue>KGNyhvtsJdA75UQyEbSi/qy7+aGbu8xtuE4SHKDKKMjbPd3ho+4nJoA3/53RfcUZP6tvwxkAUBeg
+jubozsTUYCbZKzv2ZA/HOrhSQTVw24d86zadVKy8xSL3cPaSZ5J1TWIVplcKm0qGhnYtxLxbVNIY
+eDqmj7UtamjDxIxlMqbxEw9gIEMAVfc0IF6BFNU54ZPMop5yRvgezTF2grLk/oJf8cWHx15/4F7T
+ukoOJW8K4YjCeOiSrZj+ZWDojLADF635PLJJAkLE0bt589w1aDUOT5/C7RLvS1NmK2QuK0+wLwrU
+0zn1+EMffN4uTVAZwuZN88U5aJL5Wc7rFoZfqg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -492,4 +492,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1bf9029c-bb9d-47c1-90b0-96326205d0a6" Target="#_9e87c1d0-6082-4064-840a-f9e46603cfb6"><Timestamp>2018-08-15 07:53:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0e09b547-e836-4175-9071-f024166e63a3" Target="#_1f954be0-86e5-43bb-8252-d221d5e651a9"><Timestamp>2018-08-15 07:53:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
