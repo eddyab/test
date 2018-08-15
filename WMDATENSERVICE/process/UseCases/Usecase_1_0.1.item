@@ -351,7 +351,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.EmissionsNr = input_row.EmissionsNr;&#13;&#10;output_row.VersionsNr = input_row.VersionsNr;&#13;&#10;output_row.Lieferzeit = input_row.Lieferzeit;&#13;&#10;output_row.Provider = input_row.Provider;&#13;&#10;output_row.Release = input_row.Release;&#13;&#10;output_row.Name = input_row.Name;&#13;&#10;output_row.Telefon = input_row.Telefon;&#13;&#10;output_row.Mail = input_row.Mail;&#13;&#10;output_row.Id = input_row.Id;&#13;&#10;output_row.Schema = input_row.Schema;&#13;&#10;output_row.PRIIPKennzeichenUpdateDelete = input_row.PRIIPKennzeichenUpdateDelete;&#13;&#10;output_row.PRIIPKennzeichen = input_row.PRIIPKennzeichen;&#13;&#10;output_row.AktuellesKIDvorhanden = input_row.AktuellesKIDvorhanden;&#13;&#10;output_row.ARTKIDGenerierung = input_row.ARTKIDGenerierung;&#13;&#10;output_row.KIDVersion = input_row.KIDVersion;&#13;&#10;output_row.KIDSprachversion = input_row.KIDSprachversion;&#13;&#10;output_row.KIDDatumAktualisierung = input_row.KIDDatumAktualisierung;&#13;&#10;output_row.KIDBestimmungsland = input_row.KIDBestimmungsland;&#13;&#10;output_row.HerstellerLink = input_row.HerstellerLink;&#13;&#10;output_row.SRIAktuellesKID = input_row.SRIAktuellesKID;&#13;&#10;output_row.PRIIPWarnhinweis = input_row.PRIIPWarnhinweis;&#13;&#10;output_row.TurnusKIDGenerierung = input_row.TurnusKIDGenerierung;&#13;&#10;&#10;&#10;&#10;globalMap.put(&quot;WKN&quot;,output_row.Id);&#10;&#10;System.out.println((String)globalMap.get(&quot;WKN&quot;));"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.EmissionsNr = input_row.EmissionsNr;&#13;&#10;output_row.VersionsNr = input_row.VersionsNr;&#13;&#10;output_row.Lieferzeit = input_row.Lieferzeit;&#13;&#10;output_row.Provider = input_row.Provider;&#13;&#10;output_row.Release = input_row.Release;&#13;&#10;output_row.Name = input_row.Name;&#13;&#10;output_row.Telefon = input_row.Telefon;&#13;&#10;output_row.Mail = input_row.Mail;&#13;&#10;output_row.Id = input_row.Id;&#13;&#10;output_row.Schema = input_row.Schema;&#13;&#10;output_row.PRIIPKennzeichenUpdateDelete = input_row.PRIIPKennzeichenUpdateDelete;&#13;&#10;output_row.PRIIPKennzeichen = input_row.PRIIPKennzeichen;&#13;&#10;output_row.AktuellesKIDvorhanden = input_row.AktuellesKIDvorhanden;&#13;&#10;output_row.ARTKIDGenerierung = input_row.ARTKIDGenerierung;&#13;&#10;output_row.KIDVersion = input_row.KIDVersion;&#13;&#10;output_row.KIDSprachversion = input_row.KIDSprachversion;&#13;&#10;output_row.KIDDatumAktualisierung = input_row.KIDDatumAktualisierung;&#13;&#10;output_row.KIDBestimmungsland = input_row.KIDBestimmungsland;&#13;&#10;output_row.HerstellerLink = input_row.HerstellerLink;&#13;&#10;output_row.SRIAktuellesKID = input_row.SRIAktuellesKID;&#13;&#10;output_row.PRIIPWarnhinweis = input_row.PRIIPWarnhinweis;&#13;&#10;output_row.TurnusKIDGenerierung = input_row.TurnusKIDGenerierung;&#13;&#10;&#10;globalMap.put(&quot;WKN&quot;,output_row.Id);&#10;&#10;//System.out.println((String)globalMap.get(&quot;WKN&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CSV" name="tJavaRow_1">
@@ -381,7 +381,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CSV" name="tJava_3">
@@ -498,13 +498,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b24fbab0-a51b-4d35-b097-7b0d6c314c36"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cL6E7myyG4xOSQfET9FVdSX+LnGZhyS1OmyPF2AO0dCSsTsAaWtQCcbySpyIAwrBWUohKeSDm8D1
-bpt1aTIjzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2cfb8018-0cdf-4d29-9605-471173f44606"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S3GxnxBU7kK/47p3eVam35nyUf7+yvNgg9AlE5/ZsNsyfLvKKBibt4vcoHde9AEjb7V2P8JmanCZ
-qASd/Ize5w==</DigestValue></Reference></SignedInfo><SignatureValue>m3oh1TvL9h5E9DXcI/LCsoCXrBxL/0aqkquAgY3rUP74w/VGJvJGG/o7pilc3G5H4wVAw05Z0xzX
-13Ziw04M2AvePTM5JfIB8adTaps+h14kw8q6zyazQcVA4NlmKJc2FPi4h40aO9S2jG9ksospGjkr
-yyWgg+mMaJ9U6cEpKE+w56yAgv/hYxY9b1IteQf3NwsMveHMLN995Pu9dlAhxYLFakpBw7v4e1gW
-SGyfdG0uCROfRxT4g7iE7Xdr4AMxNI5GLeGXXSg0ujHO8fQHc9ygF2oZehyMd56ufI4Io4BeLAN9
-1/h6qYQYqq4XNp88YjLQEW5X5TCZooUk7/20eA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_360d298d-5946-46e0-9d11-3ce8d2d62349"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v7hgKgN1Y5Rczj8UkXWrSArmCfikUW+oBioM9yLpBeUP6cyhxsp0Pr66x5bFCTn3DrGfvfXR6Iqn
+7cRREOaOzg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fde84dcf-a2da-4c36-bab9-c59d177d136f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oDIZarUafvg/+2E+HMlY0qQ4gPWBXdTuVK+IDvTKsmURhI9ZLcOd8hdB/JY1DAa1STiyvnkXGmdx
+PEdG9gD6Gg==</DigestValue></Reference></SignedInfo><SignatureValue>ET8qS+6bwD3M5enLKDdZwrFG59Y22q0wULf1kveTqwsDwnVaT1giY0UmMAkkXhH5hrvkwhCd5Sgp
+gaGTreHZIgLO3M8ZpbxGwDY4cf45i4et8efx/tdGbZhkOwiijDQsQwfoBgWDqoJfdhnvFaJe1v+5
+w3uyHA+fOrFaOs212j6au8IfJ7wUZpFnAbneBExU6mn+rsk46fiWO7yGHxd3BqdJSu4Cl4s6WQS5
+MsJ/tn/ArCP3/O26IIkyGh9yW1Az9ftre7AMG0CvfKz10wdIZ0ufM5AeVRAZZfGoD8mJEatuArLO
+bVkCcI4QN1xd8kkACKyGZu0bQodJKGTft4c4FQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -528,4 +528,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2cfb8018-0cdf-4d29-9605-471173f44606" Target="#_b24fbab0-a51b-4d35-b097-7b0d6c314c36"><Timestamp>2018-08-15 09:36:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fde84dcf-a2da-4c36-bab9-c59d177d136f" Target="#_360d298d-5946-46e0-9d11-3ce8d2d62349"><Timestamp>2018-08-15 09:37:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
