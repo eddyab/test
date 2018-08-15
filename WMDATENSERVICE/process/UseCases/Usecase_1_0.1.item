@@ -258,7 +258,7 @@
       <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" multiLoops="true" name="row3">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row3">
         <nodes expression="" name="doc" type="id_Document" xpath="row3/doc">
           <children main="true" name="Lieferung" type="id_String" xpath="row3.doc:/Lieferung">
             <children name="EmissionsNr" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_String" xpath="row3.doc:/Lieferung/@EmissionsNr"/>
@@ -277,13 +277,13 @@
                   <children name="Schema" nodeType="ATTRIBUT" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/@Schema"/>
                 </children>
               </children>
-              <children main="true" name="PRIIPSKIDSUpdate" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate">
+              <children name="PRIIPSKIDSUpdate" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate">
                 <children name="PRIIPKennzeichenUpdateDelete" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete"/>
                 <children name="PRIIPKennzeichen" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen"/>
                 <children name="AktuellesKIDvorhanden" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_Boolean" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden"/>
                 <children name="ARTKIDGenerierung" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_Integer" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung"/>
-                <children main="true" name="KIDVersionen" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen">
-                  <children loop="true" main="true" name="KID" optional="true" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID">
+                <children name="KIDVersionen" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen">
+                  <children name="KID" optional="true" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID">
                     <children name="KIDVersion" outgoingConnections="//@node.5/@nodeData/@connections.12" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion"/>
                     <children name="KIDSprachversion" outgoingConnections="//@node.5/@nodeData/@connections.13" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion"/>
                     <children name="KIDDatumAktualisierung" outgoingConnections="//@node.5/@nodeData/@connections.14" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung"/>
@@ -323,7 +323,6 @@
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id]" incomingConnections="//@node.5/@nodeData/@connections.20" name="ISIN" type="id_String" xpath="CSV/ISIN"/>
         <nodes expression="StringHandling.LEFT(StringHandling.RIGHT([row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id],7),6) " incomingConnections="//@node.5/@nodeData/@connections.21" name="WKN" type="id_String" xpath="CSV/WKN"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id]" incomingConnections="//@node.5/@nodeData/@connections.22" name="Id" type="id_String" xpath="CSV/Id"/>
-        <inputLoopNodesTables inputloopnodes="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0 //@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.4/@children.0"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
@@ -530,13 +529,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_45605d19-50bf-4142-9d13-f9ed032fcf7b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vq8uUJv0xzyhVTZ01CGVy8H8Bvv0rJDAhMSPbBfTvtnhx7IyQ/xiATPxOfLFBriH5q/f+v9C42P6
-z2IJRM/U6w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f63ef03b-cbeb-4a0e-878c-4c5c19b91b70"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RxS9+jrIbChpyT2wLAzcsHPqD8upxAfU2ZmTtXSh6K2iBm2Yvg9lIeok2WapWfj4jChua9YVXFWs
-1I3Y2cXe3Q==</DigestValue></Reference></SignedInfo><SignatureValue>aZ98v8Dnzs4hc6Q67Du5GB2TlWeaZX5RGuLp7Z5W+2Xcl5EDKTTQ/nrUzVg+h6pbhXOCk0RWcmTr
-X1KQe7bxcN72PXjiuBGrpBfZVHdIt7JGXlCsnpfLPosg5TmobaZc+VkyySmnxwEVyQ5lZ0jHLYUK
-fMFsgK19fwuxFZYtgBfuuUF/wTldMA9NLVw47UFH+r8GwotnZ0ktZGp2fnGxC3orJCqoha70jWp0
-/6f95NfgGQ5+eqZelNJPyJNQUuYKy2OY09zq31ijd9Ylo5twdUSsEtJKIwEZSulGY52DxBX6Mq2T
-ijQT5WeS0vRLvjhg7kgArsIftkjtmOrCHHTnHw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9c877e90-a23f-4db4-9efa-ba62d46f0a15"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1vhTIY/XwaXvHCyqsEu3Zt0SpLgfUNV4AkPcT7fiwViRbnBK1j1IJQGnHscwkD0rpVk9n18YtT9I
+q5k1uH5a0w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d8d2bb3a-8206-4b2d-92cb-95c59c11c711"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IO4qZ14Odd1ysdBwwKA4yh6TzlaK6JRekX9bzfEHFVxoIC1QnqeiSRoGq5XJlK6OpvasXJ77850D
+KNqoPwaBcQ==</DigestValue></Reference></SignedInfo><SignatureValue>EXEiI3Ki0zaqo/yxcQ9WfHc2b+lvr4RJLe7yd9q/H8is464IK1N9wYvDN09Lbb3RCQgCh4CkJS7A
+Al+ytK59k3Vwlx3rAWu80WdY+Oz/O1UZQEQN/AXfP4bDFEPjUrheT0iAcJWt+EvEwFbycYebt+xu
+DIcVzumpFPPc4jFBlmONuxVVCG/EIa0/Wmd48OelRXsqRVR53Dn8eQiwQLOILdLAiPXg4AZ3frDi
+FfXtIR9e2x2x+79aaLj18EIkf7/baUnXnXXuthrCpyyejOTBmc6Knb/HmaLrzKf715iXaC3c0gBm
+wX684HstjFPg5WzugKNt+bFRaYSe2LeN9aaRnQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -560,4 +559,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f63ef03b-cbeb-4a0e-878c-4c5c19b91b70" Target="#_45605d19-50bf-4142-9d13-f9ed032fcf7b"><Timestamp>2018-08-15 08:58:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d8d2bb3a-8206-4b2d-92cb-95c59c11c711" Target="#_9c877e90-a23f-4db4-9efa-ba62d46f0a15"><Timestamp>2018-08-15 08:59:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
