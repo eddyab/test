@@ -255,9 +255,10 @@
       <column comment="" defaultValue="" key="false" length="-1" name="SRIAktuellesKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="PRIIPWarnhinweis" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" multiLoops="true" name="row3">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row3">
         <nodes expression="" name="doc" type="id_Document" xpath="row3/doc">
           <children main="true" name="Lieferung" type="id_String" xpath="row3.doc:/Lieferung">
             <children name="EmissionsNr" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_String" xpath="row3.doc:/Lieferung/@EmissionsNr"/>
@@ -272,21 +273,20 @@
             </children>
             <children main="true" name="PRIIPSKIDSUpdates" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates">
               <children loop="true" main="true" name="Ids" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids">
-                <children expression="" name="Id" optional="true" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id">
-                  <children name="ISIN" outgoingConnections="//@node.5/@nodeData/@connections.20" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/ISIN"/>
-                  <children name="WKN" outgoingConnections="//@node.5/@nodeData/@connections.21" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/WKN"/>
+                <children name="Id" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id">
+                  <children name="Schema" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.20" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/@Schema"/>
                 </children>
               </children>
-              <children main="true" name="PRIIPSKIDSUpdate" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate">
+              <children name="PRIIPSKIDSUpdate" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate">
                 <children name="PRIIPKennzeichenUpdateDelete" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete"/>
                 <children name="PRIIPKennzeichen" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen"/>
                 <children name="AktuellesKIDvorhanden" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_Boolean" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden"/>
                 <children name="ARTKIDGenerierung" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_Integer" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung"/>
-                <children main="true" name="KIDVersionen" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen">
-                  <children loop="true" main="true" name="KID" optional="true" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID">
-                    <children name="KIDVersion" outgoingConnections="//@node.5/@nodeData/@connections.12" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion"/>
+                <children name="KIDVersionen" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen">
+                  <children name="KID" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID">
+                    <children name="KIDVersion" outgoingConnections="//@node.5/@nodeData/@connections.12" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion"/>
                     <children name="KIDSprachversion" outgoingConnections="//@node.5/@nodeData/@connections.13" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion"/>
-                    <children name="KIDDatumAktualisierung" outgoingConnections="//@node.5/@nodeData/@connections.14" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung"/>
+                    <children name="KIDDatumAktualisierung" outgoingConnections="//@node.5/@nodeData/@connections.14" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung"/>
                     <children name="KIDBestimmungsland" outgoingConnections="//@node.5/@nodeData/@connections.15" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland"/>
                     <children name="HerstellerLink" outgoingConnections="//@node.5/@nodeData/@connections.16" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink"/>
                   </children>
@@ -308,8 +308,8 @@
         <nodes expression="[row3.doc:/Lieferung/Absender/Name]" incomingConnections="//@node.5/@nodeData/@connections.5" name="Name" type="id_String" xpath="CSV/Name"/>
         <nodes expression="[row3.doc:/Lieferung/Absender/Telefon]" incomingConnections="//@node.5/@nodeData/@connections.6" name="Telefon" type="id_String" xpath="CSV/Telefon"/>
         <nodes expression="[row3.doc:/Lieferung/Absender/Mail]" incomingConnections="//@node.5/@nodeData/@connections.7" name="Mail" type="id_String" xpath="CSV/Mail"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/ISIN]" incomingConnections="//@node.5/@nodeData/@connections.20" name="ISIN" type="id_String" xpath="CSV/ISIN"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/WKN]" incomingConnections="//@node.5/@nodeData/@connections.21" name="WKN" type="id_String" xpath="CSV/WKN"/>
+        <nodes expression="1" name="ISIN" type="id_String" xpath="CSV/ISIN"/>
+        <nodes expression="1" name="WKN" type="id_String" xpath="CSV/WKN"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete]" incomingConnections="//@node.5/@nodeData/@connections.8" name="PRIIPKennzeichenUpdateDelete" type="id_Character" xpath="CSV/PRIIPKennzeichenUpdateDelete"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen]" incomingConnections="//@node.5/@nodeData/@connections.9" name="PRIIPKennzeichen" type="id_Character" xpath="CSV/PRIIPKennzeichen"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden]" incomingConnections="//@node.5/@nodeData/@connections.10" name="AktuellesKIDvorhanden" type="id_Boolean" xpath="CSV/AktuellesKIDvorhanden"/>
@@ -322,6 +322,7 @@
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/SRIAktuellesKID]" incomingConnections="//@node.5/@nodeData/@connections.17" name="SRIAktuellesKID" type="id_Integer" xpath="CSV/SRIAktuellesKID"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPWarnhinweis]" incomingConnections="//@node.5/@nodeData/@connections.18" name="PRIIPWarnhinweis" type="id_Character" xpath="CSV/PRIIPWarnhinweis"/>
         <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/TurnusKIDGenerierung]" incomingConnections="//@node.5/@nodeData/@connections.19" name="TurnusKIDGenerierung" type="id_Integer" xpath="CSV/TurnusKIDGenerierung"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/@Schema]" incomingConnections="//@node.5/@nodeData/@connections.20" name="Schema" type="id_String" xpath="CSV/Schema"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
@@ -344,8 +345,7 @@
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.8" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0/@children.0/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.22" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
@@ -406,6 +406,8 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TurnusKIDGenerierung"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Schema"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -433,6 +435,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="SRIAktuellesKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="PRIIPWarnhinweis" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileList_1">
@@ -469,13 +472,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d4e3a00-b8bf-4a6d-a6b8-e6980cb687e2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n3QnX9+hIt+hEnTlEOZecb/XYHBIBqn6yTZ8bZEyokEFCN3GBbxc6ra3O09hTeK7BYt6g70d7Yn4
-yzI6PTFcFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2c17ec32-f949-4572-93eb-b714f2c94cbf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j7+otuImEhQ/HlJ9dpYoMABIlJMOB3RM+tBMVOn/fLYmU58VXXgdRhGEUrWld6sO6FCEeYx9Jc63
-yaTgyEf/IQ==</DigestValue></Reference></SignedInfo><SignatureValue>JKyd0nLY0lf7S27ewgOSJwz4bZHnagw4BhsRemhcZQMcFbXODYkpKogII4rEVaxgDv9r+GcVurfU
-stnS2AtKHc4VG19v1wEfl2HqlgXsMtcnPrfZvav23EE4r6oQRW2/NLpN3drHBGUxUi32vnK5ezyY
-VQrNkv+wdbyc/YxWqJDyz2Qul0EG/ylUiYmGfmYyffWghiCcwa7PWD9Zbk81bwMdj0Y38cmjHfHv
-xIZuDAWZJd6Lj4eL0ugkP/YQDjp+8pZhk1thpYSLHcwp9HHWLdHQSTpwo4K2hU+SUCMKMWeJvrKz
-K20UxRZiXXdSmeqVfVCeGNWWTJEsRKugYQYv/Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_078aed46-4c16-499a-a704-e8bf005df9f8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S8mtaT1RltggxfTvCxrbTspg3omLHqN1O4x21KCsC7tX56I74//NmFoHXbDRuw/gRlrT9oTF/Nw3
+CFcN/WIVbg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_93d26a4a-8d86-46b0-81d2-5f5ab93d5bb1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NJ+jymPMsGVITAADXusatLxB+flUlZXsG6UPaJN6cETBEVbOkc5lIrV71RHrc2H5X36zjNJbOO7E
+XBTRraEZ/A==</DigestValue></Reference></SignedInfo><SignatureValue>ju20kEIZcxIY5r8Z8IiBLiHHNE4X2BWNuBrmVegDJ7r8A50r0ZpVKziLr0cIQ56CxlCromLaEaRl
+QXTKeqskESOCdOBeEkmENqqPRsiKFW5tR4+AsXtlLZmEEk4qLzUED8U3RjvIaV/33q+NVBIVXZid
+8+UpNPuc+alW6CM/dRGOjjHekxsw1/m1NEJLFksE4hWCHR3f5Y6LfHPed9dC58oqHisw/JzF3yZS
+wXNMQWAQ/dYkiFPeFwkjBSQ2LCXsA9Q7bh5I0Ktf6A3kJEe2zvIxbaCPGiM3BiKrNQYHtOellraf
+RSzWXabuKnoacBp2YLEGLj8XdGpeSuEMjWDe7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -499,4 +502,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2c17ec32-f949-4572-93eb-b714f2c94cbf" Target="#_0d4e3a00-b8bf-4a6d-a6b8-e6980cb687e2"><Timestamp>2018-08-15 08:17:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_93d26a4a-8d86-46b0-81d2-5f5ab93d5bb1" Target="#_078aed46-4c16-499a-a704-e8bf005df9f8"><Timestamp>2018-08-15 08:18:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
