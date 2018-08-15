@@ -207,147 +207,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
-    <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
-    <elementParameter field="TABLE" name="MANUALTABLE">
-      <elementValue elementRef="INPUT_COLUMN" value="doc"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="doc"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
-    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tConvertType_1">
-      <column comment="" key="false" length="-1" name="doc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="doc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CSV" name="CSV">
-      <column comment="" key="false" length="-1" name="EmissionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VersionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Lieferzeit" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Provider" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Release" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Name" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Telefon" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Mail" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="WKN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichenUpdateDelete" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichen" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="AktuellesKIDvorhanden" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ARTKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDVersion" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDSprachversion" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDDatumAktualisierung" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDBestimmungsland" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="HerstellerLink" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SRIAktuellesKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPWarnhinweis" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row3">
-        <nodes expression="" name="doc" type="id_Document" xpath="row3/doc">
-          <children main="true" name="Lieferung" type="id_String" xpath="row3.doc:/Lieferung">
-            <children name="EmissionsNr" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_String" xpath="row3.doc:/Lieferung/@EmissionsNr"/>
-            <children name="VersionsNr" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="row3.doc:/Lieferung/@VersionsNr"/>
-            <children name="Lieferzeit" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_String" xpath="row3.doc:/Lieferung/@Lieferzeit"/>
-            <children name="Provider" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="row3.doc:/Lieferung/@Provider"/>
-            <children name="Release" nodeType="ATTRIBUT" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_Integer" xpath="row3.doc:/Lieferung/@Release"/>
-            <children name="Absender" type="id_String" xpath="row3.doc:/Lieferung/Absender">
-              <children name="Name" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_String" xpath="row3.doc:/Lieferung/Absender/Name"/>
-              <children name="Telefon" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_String" xpath="row3.doc:/Lieferung/Absender/Telefon"/>
-              <children name="Mail" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_String" xpath="row3.doc:/Lieferung/Absender/Mail"/>
-            </children>
-            <children main="true" name="PRIIPSKIDSUpdates" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates">
-              <children expression="" name="Ids" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids">
-                <children name="Id" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id">
-                  <children filterOutGoingConnections="//@node.5/@nodeData/@connections.20" name="Schema" nodeType="ATTRIBUT" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/@Schema"/>
-                </children>
-              </children>
-              <children main="true" name="PRIIPSKIDSUpdate" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate">
-                <children name="PRIIPKennzeichenUpdateDelete" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete"/>
-                <children name="PRIIPKennzeichen" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen"/>
-                <children name="AktuellesKIDvorhanden" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_Boolean" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden"/>
-                <children name="ARTKIDGenerierung" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_Integer" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung"/>
-                <children main="true" name="KIDVersionen" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen">
-                  <children loop="true" main="true" name="KID" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID">
-                    <children name="KIDVersion" outgoingConnections="//@node.5/@nodeData/@connections.12" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion"/>
-                    <children name="KIDSprachversion" outgoingConnections="//@node.5/@nodeData/@connections.13" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion"/>
-                    <children name="KIDDatumAktualisierung" outgoingConnections="//@node.5/@nodeData/@connections.14" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung"/>
-                    <children name="KIDBestimmungsland" outgoingConnections="//@node.5/@nodeData/@connections.15" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland"/>
-                    <children name="HerstellerLink" outgoingConnections="//@node.5/@nodeData/@connections.16" type="id_String" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink"/>
-                  </children>
-                </children>
-                <children name="SRIAktuellesKID" outgoingConnections="//@node.5/@nodeData/@connections.17" type="id_Integer" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/SRIAktuellesKID"/>
-                <children name="PRIIPWarnhinweis" outgoingConnections="//@node.5/@nodeData/@connections.18" type="id_Character" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPWarnhinweis"/>
-                <children name="TurnusKIDGenerierung" outgoingConnections="//@node.5/@nodeData/@connections.19" type="id_Integer" xpath="row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/TurnusKIDGenerierung"/>
-              </children>
-            </children>
-          </children>
-        </nodes>
-      </inputTrees>
-      <outputTrees expressionFilter=" [row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/@Schema].equals(&quot;WKN&quot;)" filterIncomingConnections="//@node.5/@nodeData/@connections.20" name="CSV">
-        <nodes expression="[row3.doc:/Lieferung/@EmissionsNr]" incomingConnections="//@node.5/@nodeData/@connections.0" name="EmissionsNr" type="id_String" xpath="CSV/EmissionsNr"/>
-        <nodes expression="[row3.doc:/Lieferung/@VersionsNr]" incomingConnections="//@node.5/@nodeData/@connections.1" name="VersionsNr" type="id_String" xpath="CSV/VersionsNr"/>
-        <nodes expression="[row3.doc:/Lieferung/@Lieferzeit]" incomingConnections="//@node.5/@nodeData/@connections.2" name="Lieferzeit" type="id_String" xpath="CSV/Lieferzeit"/>
-        <nodes expression="[row3.doc:/Lieferung/@Provider]" incomingConnections="//@node.5/@nodeData/@connections.3" name="Provider" type="id_String" xpath="CSV/Provider"/>
-        <nodes expression="[row3.doc:/Lieferung/@Release]" incomingConnections="//@node.5/@nodeData/@connections.4" name="Release" type="id_Integer" xpath="CSV/Release"/>
-        <nodes expression="[row3.doc:/Lieferung/Absender/Name]" incomingConnections="//@node.5/@nodeData/@connections.5" name="Name" type="id_String" xpath="CSV/Name"/>
-        <nodes expression="[row3.doc:/Lieferung/Absender/Telefon]" incomingConnections="//@node.5/@nodeData/@connections.6" name="Telefon" type="id_String" xpath="CSV/Telefon"/>
-        <nodes expression="[row3.doc:/Lieferung/Absender/Mail]" incomingConnections="//@node.5/@nodeData/@connections.7" name="Mail" type="id_String" xpath="CSV/Mail"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id(1)] " name="Id" type="id_String" xpath="CSV/Id"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id[2]]" name="WKN" pattern="" type="id_String" xpath="CSV/WKN"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id[1]/@Schema]" name="Schema" type="id_String" xpath="CSV/Schema"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete]" incomingConnections="//@node.5/@nodeData/@connections.8" name="PRIIPKennzeichenUpdateDelete" type="id_Character" xpath="CSV/PRIIPKennzeichenUpdateDelete"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen]" incomingConnections="//@node.5/@nodeData/@connections.9" name="PRIIPKennzeichen" type="id_Character" xpath="CSV/PRIIPKennzeichen"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden]" incomingConnections="//@node.5/@nodeData/@connections.10" name="AktuellesKIDvorhanden" type="id_Boolean" xpath="CSV/AktuellesKIDvorhanden"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung]" incomingConnections="//@node.5/@nodeData/@connections.11" name="ARTKIDGenerierung" type="id_Integer" xpath="CSV/ARTKIDGenerierung"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion]" incomingConnections="//@node.5/@nodeData/@connections.12" name="KIDVersion" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="CSV/KIDVersion"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion]" incomingConnections="//@node.5/@nodeData/@connections.13" name="KIDSprachversion" type="id_String" xpath="CSV/KIDSprachversion"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung]" incomingConnections="//@node.5/@nodeData/@connections.14" name="KIDDatumAktualisierung" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="CSV/KIDDatumAktualisierung"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland]" incomingConnections="//@node.5/@nodeData/@connections.15" name="KIDBestimmungsland" type="id_String" xpath="CSV/KIDBestimmungsland"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink]" incomingConnections="//@node.5/@nodeData/@connections.16" name="HerstellerLink" type="id_String" xpath="CSV/HerstellerLink"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/SRIAktuellesKID]" incomingConnections="//@node.5/@nodeData/@connections.17" name="SRIAktuellesKID" type="id_Integer" xpath="CSV/SRIAktuellesKID"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPWarnhinweis]" incomingConnections="//@node.5/@nodeData/@connections.18" name="PRIIPWarnhinweis" type="id_Character" xpath="CSV/PRIIPWarnhinweis"/>
-        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/TurnusKIDGenerierung]" incomingConnections="//@node.5/@nodeData/@connections.19" name="TurnusKIDGenerierung" type="id_Integer" xpath="CSV/TurnusKIDGenerierung"/>
-      </outputTrees>
-      <varTables minimized="true" name="Var"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.12" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.13" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.14" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.4/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.15" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.4/@children.0/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.16" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.4/@children.0/@children.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.17" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.4/@children.0/@children.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.18" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.4/@children.0/@children.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1/@children.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.22" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0" xsi:type="TalendXMLMap:FilterConnection"/>
-    </nodeData>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
@@ -358,8 +217,154 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractXMLField_1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3QTpwKCYEeiHE5DYzm7eBg - metadata"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="doc"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmissionsNr"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../@EmissionsNr&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VersionsNr"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../@VersionsNr&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lieferzeit"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../@Lieferzeit&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Provider"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../@Provider&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Release"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../@Release&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../Absender/Name&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Telefon"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../Absender/Telefon&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mail"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../Absender/Mail&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISIN"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/Ids/Id[1]&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SchemaI"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/Ids/Id[1]/@Schema&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WKN"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/Ids/Id[2]&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SchemaW"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/Ids/Id[1]/@Schema&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPKennzeichenUpdateDelete"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPKennzeichen"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AktuellesKIDvorhanden"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARTKIDGenerierung"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDVersion"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDSprachversion"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDDatumAktualisierung"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDBestimmungsland"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HerstellerLink"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SRIAktuellesKID"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/SRIAktuellesKID&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPWarnhinweis"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPWarnhinweis&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TurnusKIDGenerierung"/>
+      <elementValue elementRef="QUERY" value="&quot;../../../../PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/TurnusKIDGenerierung&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" show="false" value="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tExtractXMLField_1">
+      <column comment="" key="false" length="7" name="EmissionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VersionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Lieferzeit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Provider" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Telefon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="Mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SchemaI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="WKN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="SchemaW" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichenUpdateDelete" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichen" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AktuellesKIDvorhanden" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ARTKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="KIDVersion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDSprachversion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="KIDDatumAktualisierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDBestimmungsland" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="53" name="HerstellerLink" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SRIAktuellesKID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPWarnhinweis" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="7" name="EmissionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VersionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Lieferzeit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Provider" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Telefon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="Mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SchemaI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="WKN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="SchemaW" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichenUpdateDelete" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichen" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AktuellesKIDvorhanden" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ARTKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="KIDVersion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDSprachversion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="KIDDatumAktualisierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDBestimmungsland" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="53" name="HerstellerLink" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SRIAktuellesKID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPWarnhinweis" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -388,11 +393,13 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Mail"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISIN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SchemaI"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="WKN"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Schema"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SchemaW"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPKennzeichenUpdateDelete"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -422,30 +429,31 @@
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CSV" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="EmissionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VersionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Lieferzeit" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Provider" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Release" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Name" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Telefon" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Mail" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="WKN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichenUpdateDelete" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichen" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="AktuellesKIDvorhanden" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ARTKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDVersion" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDSprachversion" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDDatumAktualisierung" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="KIDBestimmungsland" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="HerstellerLink" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SRIAktuellesKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPWarnhinweis" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="7" name="EmissionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VersionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Lieferzeit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Provider" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Telefon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="Mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SchemaI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="WKN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="SchemaW" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichenUpdateDelete" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichen" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AktuellesKIDvorhanden" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ARTKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="KIDVersion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDSprachversion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="KIDDatumAktualisierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDBestimmungsland" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="53" name="HerstellerLink" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SRIAktuellesKID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPWarnhinweis" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="384">
@@ -682,7 +690,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata name="out1">
+    <metadata connector="FLOW" name="out1">
       <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichen" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="KIDvorhanden" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="ErstellungKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
@@ -697,7 +705,7 @@
       <column comment="" key="false" length="-1" name="Link" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row7.PRIIPKennzeichen " name="PRIIPKennzeichen" nullable="true" type="id_Character"/>
@@ -826,6 +834,158 @@
       <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CSV" name="CSV">
+      <column comment="" key="false" length="-1" name="EmissionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VersionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lieferzeit" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Provider" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Release" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Name" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telefon" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mail" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WKN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichenUpdateDelete" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichen" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="AktuellesKIDvorhanden" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ARTKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDVersion" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDSprachversion" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDDatumAktualisierung" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDBestimmungsland" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HerstellerLink" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SRIAktuellesKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPWarnhinweis" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <outputTrees expressionFilter=" [row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id/@Schema].equals(&quot;WKN&quot;)" name="CSV">
+        <nodes expression="[row3.doc:/Lieferung/@EmissionsNr]" name="EmissionsNr" type="id_String" xpath="CSV/EmissionsNr"/>
+        <nodes expression="[row3.doc:/Lieferung/@VersionsNr]" name="VersionsNr" type="id_String" xpath="CSV/VersionsNr"/>
+        <nodes expression="[row3.doc:/Lieferung/@Lieferzeit]" name="Lieferzeit" type="id_String" xpath="CSV/Lieferzeit"/>
+        <nodes expression="[row3.doc:/Lieferung/@Provider]" name="Provider" type="id_String" xpath="CSV/Provider"/>
+        <nodes expression="[row3.doc:/Lieferung/@Release]" name="Release" type="id_Integer" xpath="CSV/Release"/>
+        <nodes expression="[row3.doc:/Lieferung/Absender/Name]" name="Name" type="id_String" xpath="CSV/Name"/>
+        <nodes expression="[row3.doc:/Lieferung/Absender/Telefon]" name="Telefon" type="id_String" xpath="CSV/Telefon"/>
+        <nodes expression="[row3.doc:/Lieferung/Absender/Mail]" name="Mail" type="id_String" xpath="CSV/Mail"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id(1)] " name="Id" type="id_String" xpath="CSV/Id"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id[2]]" name="WKN" pattern="" type="id_String" xpath="CSV/WKN"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/Ids/Id[1]/@Schema]" name="Schema" type="id_String" xpath="CSV/Schema"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete]" name="PRIIPKennzeichenUpdateDelete" type="id_Character" xpath="CSV/PRIIPKennzeichenUpdateDelete"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen]" name="PRIIPKennzeichen" type="id_Character" xpath="CSV/PRIIPKennzeichen"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden]" name="AktuellesKIDvorhanden" type="id_Boolean" xpath="CSV/AktuellesKIDvorhanden"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung]" name="ARTKIDGenerierung" type="id_Integer" xpath="CSV/ARTKIDGenerierung"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion]" name="KIDVersion" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="CSV/KIDVersion"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion]" name="KIDSprachversion" type="id_String" xpath="CSV/KIDSprachversion"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung]" name="KIDDatumAktualisierung" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="CSV/KIDDatumAktualisierung"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland]" name="KIDBestimmungsland" type="id_String" xpath="CSV/KIDBestimmungsland"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink]" name="HerstellerLink" type="id_String" xpath="CSV/HerstellerLink"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/SRIAktuellesKID]" name="SRIAktuellesKID" type="id_Integer" xpath="CSV/SRIAktuellesKID"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPWarnhinweis]" name="PRIIPWarnhinweis" type="id_Character" xpath="CSV/PRIIPWarnhinweis"/>
+        <nodes expression="[row3.doc:/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/TurnusKIDGenerierung]" name="TurnusKIDGenerierung" type="id_Integer" xpath="CSV/TurnusKIDGenerierung"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmissionsNr"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VersionsNr"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lieferzeit"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Provider"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Release"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Telefon"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mail"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WKN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Schema"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPKennzeichenUpdateDelete"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPKennzeichen"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AktuellesKIDvorhanden"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARTKIDGenerierung"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDVersion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDSprachversion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDDatumAktualisierung"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KIDBestimmungsland"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HerstellerLink"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SRIAktuellesKID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIIPWarnhinweis"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TurnusKIDGenerierung"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CSV" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="EmissionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VersionsNr" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lieferzeit" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Provider" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Release" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Name" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telefon" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mail" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WKN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Schema" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichenUpdateDelete" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPKennzeichen" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="AktuellesKIDvorhanden" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ARTKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDVersion" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDSprachversion" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDDatumAktualisierung" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDBestimmungsland" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HerstellerLink" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SRIAktuellesKID" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRIIPWarnhinweis" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TurnusKIDGenerierung" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileList_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
@@ -838,7 +998,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tXSDValidator_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXSDValidator_1" target="tConvertType_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tXSDValidator_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXSDValidator_1" target="tExtractXMLField_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
@@ -846,13 +1006,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractXMLField_1" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
-  </connection>
-  <connection connectorName="FLOW" label="CSV" lineStyle="0" metaname="CSV" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CSV"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tJavaRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -864,15 +1020,15 @@
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_3" target="tJava_5">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Integer)globalMap.get(&quot;Found&quot;) == 0"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_3" target="tFileInputDelimited_2">
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_3" target="tFileInputDelimited_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Integer)globalMap.get(&quot;Found&quot;) == 1"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_3" target="tJava_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Integer)globalMap.get(&quot;Found&quot;) == 0"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -918,13 +1074,23 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c598e658-ea05-485c-a486-3968d9393097"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bWF2O381L2wTuNtYsuC38nWO9AExydy5bnq39uPQHYE5ON/BowOlFoLS/gkK741Uj2Nw0YUI8pu7
-q5jHURBkMQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_145fa486-be18-45e2-95aa-8b2af176582f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n1k5v3X74VN+fe8XWzbmXO+pXaeOWGvFuFiW0td9ChO8ywJ10EiHA+9oavfuNBu1pEwM9bNhH2GS
-c2AkAtfI5w==</DigestValue></Reference></SignedInfo><SignatureValue>HhIjKRPpksNeaqp7PkA7vtJQSpU+uR4nvcKXIYA+74diFoMUqTp8t1As1r92OtU+wJoR/p7xPKp6
-n7FKOql8XsNxQ11Mh5zxuKARRENyKzU02eVFxLuEpYUpSSdPJSOV3nd3u29mnxROITcGefHx0spt
-R5o915XL3BTCDxIiCzRaHGMppAUR9iQ1I5XCkjIrDPMQs6ms30v5YTIbYpmJFaxOyHcOj8fa46Na
-q2cf1RHScxhHSLOX/Kr1bFY26m9t3slBffD4bS2U8zm9BrsjpaZSvogokWiJTo6k1dXd1biaR+o6
-W8Q4DclOmoGgACGdGZaHn/+4y/Oq3y8hEOd/Bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1ff5d521-150b-4c68-bce2-518aee2d5e46"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4Izm56LKDv3J0V4dVBGtbin9zxiLLvK3OVM7zeaYX03gHCUax2ADcJ3d4kxUf0Vsr1MXKM48jSoA
+4uIfuwMQ/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6fdf9c5c-f59c-45af-baac-40fa6cd2a7bd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>itbGQkxBIzcLCbftKqrhibuvw0BnyyaSld13PKIG1TnMv/Di7mkZYNYoSxr53ZmBzxxOl17i7dlZ
+waJaRbHnRA==</DigestValue></Reference></SignedInfo><SignatureValue>SpNKFBTegSVtzcyfpAU2y5E0h6P74XcZlaz5JLdKx0xatbzaPpvioGmUN7SSezGvq4dsByu9b33a
+OdERj8TyNEeY4t3OYWHNpy9reyUzmEscbDjVYIf6bSdt5SjbyZKCz/uV/asCrVcaChG5PeE4fYHq
+n7e2ecuJjW+6heWwlWIY2nYD8j9vmkzeSZX89eluD3agOXjzrI7fgVu9qNw/0fCUOiooJO+Dqvlu
+NB4xohrci0Qkj2tQKWACAlx+t6NGzmOb/2OSq52ZUXojsHwi4BZV7RSG+SKeVmeBgrIk0rxNlnyi
+cBzLxrEqG59Zb/vRysAJ9dhSO/q3DbM1JW+voQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -948,4 +1114,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_145fa486-be18-45e2-95aa-8b2af176582f" Target="#_c598e658-ea05-485c-a486-3968d9393097"><Timestamp>2018-08-15 14:46:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6fdf9c5c-f59c-45af-baac-40fa6cd2a7bd" Target="#_1ff5d521-150b-4c68-bce2-518aee2d5e46"><Timestamp>2018-08-15 15:23:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
