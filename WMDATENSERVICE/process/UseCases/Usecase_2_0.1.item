@@ -117,11 +117,13 @@
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
-    <elementParameter field="TEXT" name="LIMIT" value="86"/>
+    <elementParameter field="TEXT" name="LIMIT" value="85"/>
     <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_QCpfwKFOEeiSEb34mvjDDw - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
@@ -459,7 +461,7 @@
       <column comment="" key="false" length="3" name="Settlement_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Offering" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Quanto__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Trading_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Exercise_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Multiple_Excercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -473,7 +475,7 @@
       <column comment="" key="false" length="8" name="Reference_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Settlement_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Last_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Style__Ameri____Europ__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="63" name="Stock_Exchange_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Issue_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -482,10 +484,10 @@
       <column comment="" key="false" length="0" name="Risk_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TK_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Barrier_Adjustment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Interest_Rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Call___Put" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -521,7 +523,7 @@
       <column comment="" key="false" length="3" name="Settlement_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Offering" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Quanto__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Trading_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Exercise_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Multiple_Excercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -535,7 +537,7 @@
       <column comment="" key="false" length="8" name="Reference_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Settlement_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Last_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Style__Ameri____Europ__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="63" name="Stock_Exchange_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Issue_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -544,10 +546,10 @@
       <column comment="" key="false" length="0" name="Risk_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TK_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Barrier_Adjustment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Interest_Rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Call___Put" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -621,7 +623,7 @@
         <mapperTableEntries name="Settlement_Currency" nullable="true" type="id_String"/>
         <mapperTableEntries name="Offering" nullable="true" type="id_String"/>
         <mapperTableEntries name="Quanto__Y_N_" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="EUWAX_MAX__Spread" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EUWAX_MAX__Spread" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Min_Trading_Size" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Min_Exercise_Size" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Multiple_Excercise" nullable="true" type="id_Integer"/>
@@ -635,7 +637,7 @@
         <mapperTableEntries name="Reference_Day" nullable="true" type="id_String"/>
         <mapperTableEntries name="Settlement_Date" nullable="true" type="id_String"/>
         <mapperTableEntries name="Last_Listing" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Multiplier" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Multiplier" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Style__Ameri____Europ__" nullable="true" type="id_String"/>
         <mapperTableEntries name="Stock_Exchange_Listing" nullable="true" type="id_String"/>
         <mapperTableEntries name="Issue_Price" nullable="true" type="id_String"/>
@@ -644,10 +646,10 @@
         <mapperTableEntries name="Risk_Class" nullable="true" type="id_String"/>
         <mapperTableEntries name="TK_Code" nullable="true" type="id_String"/>
         <mapperTableEntries name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Bonus_Amount" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Bonus_Price_in_UL___Bonuslevel" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Cap_Price_in_UL___Cap_Level" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Bonus_Amount" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Bonus_Price_in_UL___Bonuslevel" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Cap_Price_in_UL___Cap_Level" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Barrier_Adjustment" nullable="true" type="id_String"/>
         <mapperTableEntries name="Interest_Rate" nullable="true" type="id_String"/>
         <mapperTableEntries name="Call___Put" nullable="true" type="id_String"/>
@@ -720,13 +722,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1d93edb6-5c42-42ee-a052-67ac2684eb4e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6Y409BrOs8oDmwyGn+GP95szCcE01OHV5x+aWU6ClnAksMR4W5rA5uWVaCW38IrVgZ42X6jN3lxa
-EoGaUex3zw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_421785c3-95f1-421c-852c-15c58c67a07d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pSQEDwmfhMjpCfHtphzhxsR9a5EMALOPD+JPe0kbIXpohttwo3Nc4lcRZaL1/Hd4rsgbulxjKUxN
-1bw+lTLwsA==</DigestValue></Reference></SignedInfo><SignatureValue>BTNwFZZJnePHK02+zzx0Z35Z3Wrfa8qip9wlsjj7XruASFzG2RZKPMurgwWNDrCqrqkZ2A9j7kCZ
-JY8XY7uPHVKy7q1DA06AEvj8J7Veyb4X/xHvPUEPpq56BkNw5mvJZQ7yURnO2uZCCrSK7snBTtwk
-YV76rLd8LVJkbeGf+d1Eeoi21ul1C4RUJE9WGblq47S4Tza4IyrzT3z8Bgwua4JKD6Hvuw51nCey
-PgKiWulm31NkTzBtd31fvVpIliAxGyQqKoFR6h7n4fDi5+AhyMMth3NeOpR4BauYWmwro4ZCzQeV
-9HoG97SbIAE3YwG7yCyPjAsMFNz47JBTnEgM7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b969a055-deae-4036-9a5c-1821fac1cbb6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VIdLj1A94Nvid0lelKY/tD5lTvsdOME0GXsX8BCUU+1bE6FMGP6R/r9Lt2FhpJV/bL5GgQuKY6AM
+sa/xAw4S0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9043333a-d514-4726-901d-a6bc37a77613"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FEpQDl2lfyFwicKLs8ohF26q0PobLDsjVT85UrKYlzoyNhR5aIxjcBetDoRcLYQ/Ba6TXD9g2+TY
+pk/51zpSeQ==</DigestValue></Reference></SignedInfo><SignatureValue>nR29kkW11A96AKv+6Or76cUvhMyD0oRSX7fEHXQ8t/8w2ECnYzVyD51REcPz5gZsACHMLZ2auVQm
+Yyuptd5cqhwtQKi9YSgdB5ONyv5GqfuYSLaoWzHFdJZaCwdwcY0OK1CZtkcrXgOXWSAu6AGtZt8R
+5a+zZEEEJUteM3yPLuHgp/BzcOL6LYkTDaB1LFt8z9wL34LFM/WycQE96yCEGTvYK1N0CNM1QE0x
+q27123yx0iUESd2QhH0zF8ZuA5lMWNVqkSP9sykxALtxHyJxYz/wfa/DhSvJGe0CVu1ONn70XAii
+MCx0zZ7VbobnpbFMMGy3VdFr7amKYMRO8FYYGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -750,4 +752,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_421785c3-95f1-421c-852c-15c58c67a07d" Target="#_1d93edb6-5c42-42ee-a052-67ac2684eb4e"><Timestamp>2018-08-16 12:30:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9043333a-d514-4726-901d-a6bc37a77613" Target="#_b969a055-deae-4036-9a5c-1821fac1cbb6"><Timestamp>2018-08-16 12:30:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
