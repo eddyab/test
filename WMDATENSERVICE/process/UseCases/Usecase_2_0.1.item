@@ -108,7 +108,7 @@
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/Beispiele Zertifikate/Neuer Ordner/Setup Sheet DS5PAB - DS5PCT 2018_07_17.xls&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
@@ -119,8 +119,6 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_QCpfwKFOEeiSEb34mvjDDw - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
@@ -247,7 +245,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="_71_m_"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" show="false" value="false"/>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
     <elementParameter field="TABLE" name="DATESELECT" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Product_Category"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
@@ -432,11 +430,11 @@
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
     <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
-    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false"/>
-    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" show="false" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="11" name="Product_Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -472,7 +470,7 @@
       <column comment="" key="false" length="8" name="Reference_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Settlement_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Last_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Style__Ameri____Europ__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="63" name="Stock_Exchange_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Issue_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -481,10 +479,10 @@
       <column comment="" key="false" length="0" name="Risk_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TK_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Barrier_Adjustment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Interest_Rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Call___Put" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -534,7 +532,7 @@
       <column comment="" key="false" length="8" name="Reference_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Settlement_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Last_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Style__Ameri____Europ__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="63" name="Stock_Exchange_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Issue_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -543,10 +541,10 @@
       <column comment="" key="false" length="0" name="Risk_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TK_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Barrier_Adjustment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Interest_Rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Call___Put" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -634,7 +632,7 @@
         <mapperTableEntries name="Reference_Day" nullable="true" type="id_String"/>
         <mapperTableEntries name="Settlement_Date" nullable="true" type="id_String"/>
         <mapperTableEntries name="Last_Listing" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Multiplier" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Multiplier" nullable="true" type="id_String"/>
         <mapperTableEntries name="Style__Ameri____Europ__" nullable="true" type="id_String"/>
         <mapperTableEntries name="Stock_Exchange_Listing" nullable="true" type="id_String"/>
         <mapperTableEntries name="Issue_Price" nullable="true" type="id_String"/>
@@ -643,10 +641,10 @@
         <mapperTableEntries name="Risk_Class" nullable="true" type="id_String"/>
         <mapperTableEntries name="TK_Code" nullable="true" type="id_String"/>
         <mapperTableEntries name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Bonus_Amount" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Bonus_Price_in_UL___Bonuslevel" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Cap_Price_in_UL___Cap_Level" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Bonus_Amount" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Bonus_Price_in_UL___Bonuslevel" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Cap_Price_in_UL___Cap_Level" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" type="id_String"/>
         <mapperTableEntries name="Barrier_Adjustment" nullable="true" type="id_String"/>
         <mapperTableEntries name="Interest_Rate" nullable="true" type="id_String"/>
         <mapperTableEntries name="Call___Put" nullable="true" type="id_String"/>
@@ -719,13 +717,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7cf9830b-a6d6-4c01-b504-65284ee54cf9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dGsdr/ioX/NcMMMSUzjkuL7cdf74x1wFXAtvsN4VBPKCAHusLtbuoujwcgRJcPpS3GBKaSaPD4E5
-/LHN6ocjCA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d8cd46ae-57e7-4300-a0a8-17c7a2dd2909"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oR942EngGRl6a0MpUBeGlT8obhllO9y9RvOQp7ZipaUjSPVoFl9AJ76wj6fqQbp9FHOpulUQQ5/A
-7QmOMX7WGg==</DigestValue></Reference></SignedInfo><SignatureValue>1+pTWVxLQcopspQQuibyD2vzxusgaoZ8/RoqbohJt6LIzi8IBbXz1fZXU6Ox64BzcETofd+Sx+pj
-tr2kISQqzUjzrUu8GnNClwG/80mc88So5gXz8x/6OsBCB4GcMVb2fYveRhZuRpz3uPfeUgdbc1a+
-dgOQdIVB1aMBhi3lzgB7OIE11bpCR+7iwydpqncjungIQ5Ukb2C3IjT23RelaKN+pYF2VodfuumX
-R/qt16mBTo2nhjrNnjI2CJrme+0EamFx5kI8lwUZnblYjAaH1bfofRgEKGPrEjPWmyWWMbg6EKEz
-selKrnzPVpITxAeGDBQheOWJc4CHDtKIR9Qx0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f429b4d9-7546-47bb-96bd-21a69aa5204f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8HARTEcQeRE4RfLGIOb3k3HJJOo0EeD7yo+Bt6Btd8l/PckZljEg1b3w0Xe5LL7lRo/Yu7KgiFfr
+aiIePV9n/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d6de5af-46c3-4fd9-892a-0f6def9a0d09"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gJdmXGNpSzV5WaJVoFzvkxxDt1is1WlZ7+ZFSC63SD33ZUH17si0iKZZXWeYvSfXGoiqeLlO4S7b
+jXJG+SwDcA==</DigestValue></Reference></SignedInfo><SignatureValue>g3S9WTSBBqAa4OFJI1wxugOmXpbidTLDo/McBIdCqg/zfu9EWjVT089QkaJmWRnLEbZVFCYrfdOh
+3o3LoMM0WdRTKa5SVxTgjH/f+b1EYqt1GJZiilpmfr3EcFMOJ9fT1DyjCdFFuNFYebKFdLnVWpGo
+bNQT0kfXVqzWYCxh+WhaNvOZbZLazFWBUnkYI0mOfd0ZZuW+bFr7fABewgKdCr0vnJZGWXPr4H9s
+Q4Eu3DCCjiYojSHwXDqlHHlOwK+Lu2S+wVXZrg3D84qLLwW/4sS7avnoZ+NfKYcxPnZr5h71wqko
+T3QCTrKi/8fspbeeA7Pcz2iPYgz36RNy9/ev2g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -749,4 +747,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d8cd46ae-57e7-4300-a0a8-17c7a2dd2909" Target="#_7cf9830b-a6d6-4c01-b504-65284ee54cf9"><Timestamp>2018-08-16 12:18:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d6de5af-46c3-4fd9-892a-0f6def9a0d09" Target="#_f429b4d9-7546-47bb-96bd-21a69aa5204f"><Timestamp>2018-08-16 12:23:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
