@@ -699,10 +699,39 @@
       <column comment="" key="false" length="-1" name="Link" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="JSON">
-      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lieferung" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="EmissionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VersionsNr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Lieferzeit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Provider" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Absender" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Telefon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="Mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRIIPSKIDSUpdates" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ids" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="WKN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRIIPSKIDSUpdate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichenUpdateDelete" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPKennzeichen" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AktuellesKIDvorhanden" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ARTKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDVersionen" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDVersion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDSprachversion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KIDDatumAktualisierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="KIDBestimmungsland" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="53" name="HerstellerLink" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SRIAktuellesKID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRIIPWarnhinweis" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row7.PRIIPKennzeichen " name="PRIIPKennzeichen" nullable="true" type="id_Character"/>
@@ -721,7 +750,36 @@
         <mapperTableEntries expression="row7.HerstellerLink " name="Link" nullable="true" type="id_String"/>
       </outputTables>
       <outputTables name="JSON" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="newColumn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="Lieferung" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.EmissionsNr " name="EmissionsNr" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.VersionsNr " name="VersionsNr" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.Lieferzeit " name="Lieferzeit" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.Provider " name="Provider" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.Release " name="Release" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="Absender" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.Name " name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.Telefon " name="Telefon" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.Mail " name="Mail" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="PRIIPSKIDSUpdates" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="Ids" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="Id" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.ISIN " name="ISIN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.WKN " name="WKN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="PRIIPSKIDSUpdate" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.PRIIPKennzeichenUpdateDelete " name="PRIIPKennzeichenUpdateDelete" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row7.PRIIPKennzeichen " name="PRIIPKennzeichen" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row7.AktuellesKIDvorhanden " name="AktuellesKIDvorhanden" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row7.ARTKIDGenerierung " name="ARTKIDGenerierung" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="KIDVersionen" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="KID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.KIDVersion " name="KIDVersion" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.KIDSprachversion " name="KIDSprachversion" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.KIDDatumAktualisierung " name="KIDDatumAktualisierung" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.KIDBestimmungsland " name="KIDBestimmungsland" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.HerstellerLink " name="HerstellerLink" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.SRIAktuellesKID " name="SRIAktuellesKID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row7.PRIIPWarnhinweis " name="PRIIPWarnhinweis" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row7.TurnusKIDGenerierung " name="TurnusKIDGenerierung" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row7" sizeState="INTERMEDIATE">
         <mapperTableEntries name="EmissionsNr" nullable="true" type="id_String"/>
@@ -814,6 +872,201 @@
       <column comment="" key="false" length="-1" name="Link" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteJSONField_1"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="output"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/Lieferung"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/Lieferung/EmissionsNr"/>
+      <elementValue elementRef="COLUMN" value="EmissionsNr"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="PATH" value="/Lieferung/VersionsNr"/>
+      <elementValue elementRef="COLUMN" value="VersionsNr"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Lieferzeit"/>
+      <elementValue elementRef="COLUMN" value="Lieferzeit"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Provider"/>
+      <elementValue elementRef="COLUMN" value="Provider"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Release"/>
+      <elementValue elementRef="COLUMN" value="Release"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Absender"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Absender/Name"/>
+      <elementValue elementRef="COLUMN" value="Name"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="8"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Absender/Telefon"/>
+      <elementValue elementRef="COLUMN" value="Telefon"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="9"/>
+      <elementValue elementRef="PATH" value="/Lieferung/Absender/Mail"/>
+      <elementValue elementRef="COLUMN" value="Mail"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="10"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="11"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/Ids"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="12"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/Ids/Id"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="13"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/Ids/Id/ISIN"/>
+      <elementValue elementRef="COLUMN" value="ISIN"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="14"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/Ids/Id/WKN"/>
+      <elementValue elementRef="COLUMN" value="WKN"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="15"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="16"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichenUpdateDelete"/>
+      <elementValue elementRef="COLUMN" value="PRIIPKennzeichenUpdateDelete"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="17"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/PRIIPKennzeichen"/>
+      <elementValue elementRef="COLUMN" value="PRIIPKennzeichen"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="18"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/AktuellesKIDvorhanden"/>
+      <elementValue elementRef="COLUMN" value="AktuellesKIDvorhanden"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="19"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/ARTKIDGenerierung"/>
+      <elementValue elementRef="COLUMN" value="ARTKIDGenerierung"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="20"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="21"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/SRIAktuellesKID"/>
+      <elementValue elementRef="COLUMN" value="SRIAktuellesKID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="28"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/PRIIPWarnhinweis"/>
+      <elementValue elementRef="COLUMN" value="PRIIPWarnhinweis"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="29"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/TurnusKIDGenerierung"/>
+      <elementValue elementRef="COLUMN" value="TurnusKIDGenerierung"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="30"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="22"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDVersion"/>
+      <elementValue elementRef="COLUMN" value="KIDVersion"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="23"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDSprachversion"/>
+      <elementValue elementRef="COLUMN" value="KIDSprachversion"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="24"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDDatumAktualisierung"/>
+      <elementValue elementRef="COLUMN" value="KIDDatumAktualisierung"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="25"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/KIDBestimmungsland"/>
+      <elementValue elementRef="COLUMN" value="KIDBestimmungsland"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="26"/>
+      <elementValue elementRef="PATH" value="/Lieferung/PRIIPSKIDSUpdates/PRIIPSKIDSUpdate/KIDVersionen/KID/HerstellerLink"/>
+      <elementValue elementRef="COLUMN" value="HerstellerLink"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="27"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="output"/>
+      <elementValue elementRef="INPUT_COLUMN" value="KID"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="false"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteJSONField_1">
+      <column comment="" key="false" length="-1" name="output" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="output"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="output" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;#KIDs: &quot;+((Integer)globalMap.get(&quot;tFileInputDelimited_2_NB_LINE&quot;)));"/>
@@ -897,7 +1150,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_2">
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="WKN"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -909,8 +1162,111 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
+  <connection connectorName="FLOW" label="JSON" lineStyle="0" metaname="JSON" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tWriteJSONField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="JSON"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="HerstellerLink"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VersionsNr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KIDDatumAktualisierung"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TurnusKIDGenerierung"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lieferzeit"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIIPWarnhinweis"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIIPSKIDSUpdates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIIPKennzeichenUpdateDelete"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KIDVersion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ids"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SRIAktuellesKID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EmissionsNr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Release"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AktuellesKIDvorhanden"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIIPKennzeichen"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KIDVersionen"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ISIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Provider"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ARTKIDGenerierung"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mail"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lieferung"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Absender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WKN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Telefon"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KIDSprachversion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIIPSKIDSUpdate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="KIDBestimmungsland"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="output"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
   <note opaque="true" posX="928" posY="160" sizeHeight="64" sizeWidth="225" text="JSON in tMap"/>
   <subjob>
@@ -943,13 +1299,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_349a5f3b-c1ea-4652-a290-fbf51e960a0e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9neSiCSN7Nhqe2hK/1fHZds0Puan15tMcFLOFT1zo2UqVNHpxYHPYNVTaLrNqxHU3QnPAiVlfVQ5
-OcCrQBJotw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7766c14e-c9dc-4d0a-b087-1b6163380f30"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G8HL+Krbc78VxKTtuItSrAiZGa9MkFv5bSioaIOU8SDO2o75rY0M3ry8EqMa7caCd7m3VdwIR3tX
-GMxt7mw8sQ==</DigestValue></Reference></SignedInfo><SignatureValue>ws942rx3jH2YpKKx25rWy6JhjQsE/8gzzLL/BQloY+Vz/ixiCJTHT6dv8BGAmLYsd+JfyjOIn3pV
-5/AE590n/kaMkDazh4LIKmpiVoNeepnDod6VS86DCIv+h/Xs7GlT1UKkge6eILhckT2X7xOaCGmn
-tEJkpdz0bV6vhgM6SsMbklRn/eroz1ZW+GYwsJlfyURWOV12J3DqVF7DoyZ/6ZbIQsrN/grVXFYf
-GiSXEH+6lNX4yPx+tNv7BQEwiVyysEWzR0yO9mJ/UsGdBENDreok2WEo+FH1iiOtWWkfIWZkX1ni
-EeGIxt8ZDoKepOUjeW1+D+gi6H8PQZ6hoqOy0A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2b1b45c7-ab5f-42dc-9a97-4acf084ee5c2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fu3VzchJ6oCAAovUqvKr3K8DPGCxQp1BV/5IrmDDeurP9B/z8GLFjKXU506QAv1q9OutGN23/7HU
+QS0QPtHOcg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2b32c2aa-0036-4868-b90c-636e19ad6754"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vhLSHaa43RILwkHCzL1v5NYg4uIX1NhyRoYehcutFtXcJopoBbnrMyOB84HQ25jR+WZhL6EzFrO/
+eoVSDurSZg==</DigestValue></Reference></SignedInfo><SignatureValue>F0XqEJgWCc8qgybEP6H0dguC8d7fh36fEVB8TDomrezLcTy+VDzfY4xXTn7NiwLOu1IbWhlXebUb
+6D0Mu2kjLWShHEb/odYoKRKfGmhyFya2GlF27nkKZ60lQZrbI3Ky+nQ3/pkDPIChHuMi3BKpQhC2
+jslfSk5W15p9XCOlF/BxzOMK5i5RRXa0MH35TIkmkDoywVj0KMnvM4Kdj45HJJA7tStfYjanw2wY
+/eW8Bz4Z2hajQOXw67V5j8bwOs4v4VhdxfWunLtdzZSmFYlUY5VWjKH8Rpg1KwJeYZV+Bc/muDPd
+JPocY/1OILYFL365O+0bxADcJ4UknSvUWD2tew==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -973,4 +1329,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7766c14e-c9dc-4d0a-b087-1b6163380f30" Target="#_349a5f3b-c1ea-4652-a290-fbf51e960a0e"><Timestamp>2018-08-16 06:52:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2b32c2aa-0036-4868-b90c-636e19ad6754" Target="#_2b1b45c7-ab5f-42dc-9a97-4acf084ee5c2"><Timestamp>2018-08-16 07:28:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
