@@ -459,7 +459,7 @@
       <column comment="" key="false" length="3" name="Settlement_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Offering" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Quanto__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Trading_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Exercise_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Multiple_Excercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -521,7 +521,7 @@
       <column comment="" key="false" length="3" name="Settlement_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Offering" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Quanto__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Trading_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Min_Exercise_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Multiple_Excercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -621,7 +621,7 @@
         <mapperTableEntries name="Settlement_Currency" nullable="true" type="id_String"/>
         <mapperTableEntries name="Offering" nullable="true" type="id_String"/>
         <mapperTableEntries name="Quanto__Y_N_" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="EUWAX_MAX__Spread" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="EUWAX_MAX__Spread" nullable="true" type="id_String"/>
         <mapperTableEntries name="Min_Trading_Size" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Min_Exercise_Size" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Multiple_Excercise" nullable="true" type="id_Integer"/>
@@ -720,13 +720,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ba27203a-92ac-4eee-80eb-33b23ffdfdcf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ARw1TgDGujfRNEsDmvTeH8+Bbzev1eaIquWOsVI+rE5wfw9ndO1GV7okfq7wAqQPnMzXjx5CSk88
-z/oPtkDQhA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e8a0a987-efa4-4b3e-9ffe-e586cffd870b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KZoPnenn7MTIK98V7A+596nGwKCF77hSGG0Fefjs6qL3ClYDUTn8BwHj0zaFiuOs4vwp/0RE+729
-kXTNWR2Hrw==</DigestValue></Reference></SignedInfo><SignatureValue>zPgTzdlEbLC7p5rBeIbJ09BtwSvlocetDI2a208wTniclbi+eEzpgpanhW0nH4ShsjntV0YLz57i
-pCJcXycSS99Ln56Rs1TsnREvNsdpnKFV/90lqLyU27TsMFaOV+v/gHJdVRFWjs4yhvRNN+oPiZpE
-aH7U4Om819suCW48gJXlC2JS5YWd8f7Nvgin3ODXlo5L1WwExF5fzHPi3E2039cc2UNkDck32CzU
-FPfxBSSfNz98+0/9A4U+QkSCZWLvXDxZLxS0RRLDOhg+A8LeI5TV27If8RoR+Ec9zzBzyrzXnVsj
-t/UJ6reocNou5ICjegO5/jbJAqeKupm60hkbDA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_949990f3-e393-41ba-bc25-215b2ddd4cdf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pp6E/Tpx74k+ewOqJk+XJ9kMa9AL7s5pyS62hDAFYS0B0M01dFNCsMnrqtGe/3HgyNv6v9EH8PTE
+5WoelK0NxA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_46defc64-e6eb-4fb6-9a9f-38f5c4a07631"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H5PR9rhtYMCnPzhop2VCVZ+BzjNKx/0kN4Fa4R3lLGsx6s7BAQdEqYBY00CWEqYDzQLP7en1NjQe
+2cqg33hNxA==</DigestValue></Reference></SignedInfo><SignatureValue>1tC34Frhe0JOSsMPOb2PxBHzxGnsAPd5rJ/6srsD2i6XFdp862nr96Mqi3SOanUXf7aBduqbJMu/
+uBzj3aSvxOsW0aEAkBkYLH0KYp1XWXIMPOdgOkPcRFrMSTmmEpA3+gvKi7pEEt8f7TnyDPHJ8n+u
+Iwb17VD4Lu/exRf8qkK1nJNR906SfQ5NYHIBsM5d0hFB9gu9eOM8RQ6NrXIsOP1Slx8QNdsX7VWD
+7uObhnTE2oxuYkTti7fFahNbW1fUHVwkWDTMApVDqYwL1eJu3AUmcWAYHj45OIO4jBSW6MW4i2Ae
+6RA4WQ9at9qha1s8GkP7FNzddEzsxnMcte+2AA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -750,4 +750,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e8a0a987-efa4-4b3e-9ffe-e586cffd870b" Target="#_ba27203a-92ac-4eee-80eb-33b23ffdfdcf"><Timestamp>2018-08-16 12:27:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_46defc64-e6eb-4fb6-9a9f-38f5c4a07631" Target="#_949990f3-e393-41ba-bc25-215b2ddd4cdf"><Timestamp>2018-08-16 12:28:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
