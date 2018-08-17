@@ -566,94 +566,73 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_Hgi6oKE0EeiSEb34mvjDDw-tMap_2-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.Product_Category = input_row.Product_Category;&#13;&#10;//output_row.Marketing_Type = input_row.Marketing_Type;&#10;&#10;switch(input_row.Marketing_Type){&#10;&#9;case &quot;DiscountZertifikat&quot;:  &#10;&#9;case &quot;DiscountZertifikatQuanto&quot;:&#10;&#9;&#9;&#9; output_row.Marketing_Type = &quot;DISC.Z&quot;;&#10;&#9;&#9;&#9; break;&#10;&#9;case &quot;BonusZertifikat&quot;:&#10;&#9;&#9;&#9; output_row.Marketing_Type = &quot;BONUSZ&quot;;&#10;&#9;&#9;&#9; break;&#10;&#9;case &quot;BonusZertifikatmitCap&quot;:&#10;&#9;case &quot;Bonus-Zertifikat mit Cap&quot;:&#10;&#9;&#9;&#9; output_row.Marketing_Type = &quot;CA.BO.Z&quot;;&#10;&#9;&#9;&#9; break;&#10;&#9;default: &#10;&#9;&#9;&#9; output_row.Marketing_Type = &quot;Invalid&quot;;&#10;&#9;&#9;&#9; break;&#10;} &#10;&#13;&#10;output_row.ISIN = input_row.ISIN;&#13;&#10;output_row.WKN = input_row.WKN;&#13;&#10;output_row.Common_Code = input_row.Common_Code;&#13;&#10;output_row.Valoren = input_row.Valoren;&#13;&#10;output_row.SWX_Trading_Symbol = input_row.SWX_Trading_Symbol;&#13;&#10;output_row.Issue_Day = input_row.Issue_Day;&#13;&#10;output_row.Value_Day = input_row.Value_Day;&#13;&#10;output_row.First_Listing_Date = input_row.First_Listing_Date;&#13;&#10;output_row.Underlying_Type = input_row.Underlying_Type;&#13;&#10;output_row.Underlying_RIC = input_row.Underlying_RIC;&#13;&#10;output_row.Underlying_ISIN = input_row.Underlying_ISIN;&#13;&#10;output_row.Underly_ing_Currency = input_row.Underly_ing_Currency;&#13;&#10;output_row.Current_Underlying_Price = input_row.Current_Underlying_Price;&#13;&#10;output_row.Underlying_Exchange = input_row.Underlying_Exchange;&#13;&#10;output_row.Settlement_Currency = input_row.Settlement_Currency;&#13;&#10;output_row.Offering = input_row.Offering;&#13;&#10;output_row.Quanto__Y_N_ = input_row.Quanto__Y_N_;&#13;&#10;output_row.EUWAX_MAX__Spread = input_row.EUWAX_MAX__Spread;&#13;&#10;output_row.Min_Trading_Size = input_row.Min_Trading_Size;&#13;&#10;output_row.Min_Exercise_Size = input_row.Min_Exercise_Size;&#13;&#10;output_row.Multiple_Excercise = input_row.Multiple_Excercise;&#13;&#10;output_row.Issue_Size = input_row.Issue_Size;&#13;&#10;output_row.Nominal_per_Security = input_row.Nominal_per_Security;&#13;&#10;output_row.Up_to_Issue_Size = input_row.Up_to_Issue_Size;&#13;&#10;output_row.Automatic_Exercise = input_row.Automatic_Exercise;&#13;&#10;output_row.Clearing_Agent = input_row.Clearing_Agent;&#13;&#10;output_row.Settlement_Type = input_row.Settlement_Type;&#13;&#10;output_row.Start_Barrier_Determination_Period = input_row.Start_Barrier_Determination_Period;&#13;&#10;output_row.Reference_Day = input_row.Reference_Day;&#13;&#10;output_row.Settlement_Date = input_row.Settlement_Date;&#13;&#10;output_row.Last_Listing = input_row.Last_Listing;&#13;&#10;output_row.Multiplier = input_row.Multiplier;&#13;&#10;output_row.Style__Ameri____Europ__ = input_row.Style__Ameri____Europ__;&#13;&#10;output_row.Stock_Exchange_Listing = input_row.Stock_Exchange_Listing;&#13;&#10;output_row.Issue_Price = input_row.Issue_Price;&#13;&#10;output_row.FX_Rate_Underl__Settlement_Cur_ = input_row.FX_Rate_Underl__Settlement_Cur_;&#13;&#10;output_row.Warrant_Segment = input_row.Warrant_Segment;&#13;&#10;output_row.Risk_Class = input_row.Risk_Class;&#13;&#10;output_row.TK_Code = input_row.TK_Code;&#13;&#10;output_row.Max__Amount___Strike___Reference_Price___Upper_Strike = input_row.Max__Amount___Strike___Reference_Price___Upper_Strike;&#13;&#10;output_row.Bonus_Amount = input_row.Bonus_Amount;&#13;&#10;output_row.Bonus_Price_in_UL___Bonuslevel = input_row.Bonus_Price_in_UL___Bonuslevel;&#13;&#10;output_row.Cap_Price_in_UL___Cap_Level = input_row.Cap_Price_in_UL___Cap_Level;&#13;&#10;output_row.Knock_Out_Level___Barrier_Level___Lower_Strike = input_row.Knock_Out_Level___Barrier_Level___Lower_Strike;&#13;&#10;output_row.Barrier_Adjustment = input_row.Barrier_Adjustment;&#13;&#10;output_row.Interest_Rate = input_row.Interest_Rate;&#13;&#10;output_row.Call___Put = input_row.Call___Put;&#13;&#10;output_row.Coupon_in__ = input_row.Coupon_in__;&#13;&#10;output_row.Number_of_Shares = input_row.Number_of_Shares;&#13;&#10;output_row.Coupon_Calculation_Method = input_row.Coupon_Calculation_Method;&#13;&#10;output_row.Coupon_Payment_Date = input_row.Coupon_Payment_Date;&#13;&#10;output_row.Outperformance_factor = input_row.Outperformance_factor;&#13;&#10;output_row.Price_Type = input_row.Price_Type;&#13;&#10;output_row.Coupon_Frequency = input_row.Coupon_Frequency;&#13;&#10;output_row.Barrier_Observation_Type = input_row.Barrier_Observation_Type;&#13;&#10;output_row.Observation_Period_End_Date = input_row.Observation_Period_End_Date;&#13;&#10;output_row.ISIN_of_Asset_for_Physical_Delivery = input_row.ISIN_of_Asset_for_Physical_Delivery;&#13;&#10;output_row._71_m_ = input_row._71_m_;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out1">
+    <metadata connector="FLOW" label="metadata" name="tJavaRow_1">
+      <column comment="" key="false" length="11" name="Product_Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="24" name="Marketing_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="var1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="WKN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Common_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Valoren" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SWX_Trading_Symbol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Issue_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Value_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="First_Listing_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Underlying_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Underlying_RIC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Underlying_ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Underly_ing_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Current_Underlying_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="Underlying_Exchange" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Settlement_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Offering" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Quanto__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Min_Trading_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Min_Exercise_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiple_Excercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Issue_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Nominal_per_Security" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Up_to_Issue_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Automatic_Exercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Clearing_Agent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Settlement_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Start_Barrier_Determination_Period" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Reference_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Settlement_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Last_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Style__Ameri____Europ__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="63" name="Stock_Exchange_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Issue_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FX_Rate_Underl__Settlement_Cur_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Warrant_Segment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Risk_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TK_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Barrier_Adjustment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Interest_Rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Call___Put" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_in__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Number_of_Shares" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_Calculation_Method" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_Payment_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Outperformance_factor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Price_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_Frequency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Barrier_Observation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Observation_Period_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ISIN_of_Asset_for_Physical_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="_71_m_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.Marketing_Type " name="Marketing_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="switch(row1.Marketing_Type){&#13;&#10;&#9;case &quot;DiscountZertifikat&quot;:  &#13;&#10;&#9;case &quot;DiscountZertifikatQuanto&quot;:&#13;&#10;&#9;&#9;&#9; row1.Marketing_Type = &quot;DISC.Z&quot;;&#13;&#10;&#9;&#9;&#9; break;&#13;&#10;&#9;case &quot;BonusZertifikat&quot;:&#13;&#10;&#9;&#9;&#9; row1.Marketing_Type = &quot;BONUSZ&quot;;&#13;&#10;&#9;&#9;&#9; break;&#13;&#10;&#9;case &quot;BonusZertifikatmitCap&quot;:&#13;&#10;&#9;case &quot;Bonus-Zertifikat mit Cap&quot;:&#13;&#10;&#9;&#9;&#9; row1.Marketing_Type = &quot;CA.BO.Z&quot;;&#13;&#10;&#9;&#9;&#9; break;&#13;&#10;&#9;default: &#13;&#10;&#9;&#9;&#9; row1.Marketing_Type = &quot;Invalid&quot;;&#13;&#10;&#9;&#9;&#9; break;&#13;&#10;} " name="var1" type="id_String"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Product_Category" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Marketing_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ISIN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="WKN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Common_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Valoren" nullable="true" type="id_String"/>
-        <mapperTableEntries name="SWX_Trading_Symbol" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Issue_Day" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Value_Day" nullable="true" type="id_String"/>
-        <mapperTableEntries name="First_Listing_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Underlying_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Underlying_RIC" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Underlying_ISIN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Underly_ing_Currency" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Current_Underlying_Price" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Underlying_Exchange" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Settlement_Currency" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Offering" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Quanto__Y_N_" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="EUWAX_MAX__Spread" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Min_Trading_Size" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Min_Exercise_Size" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Multiple_Excercise" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Issue_Size" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Nominal_per_Security" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Up_to_Issue_Size" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Automatic_Exercise" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Clearing_Agent" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Settlement_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Start_Barrier_Determination_Period" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Reference_Day" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Settlement_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Last_Listing" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Multiplier" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Style__Ameri____Europ__" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Stock_Exchange_Listing" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Issue_Price" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FX_Rate_Underl__Settlement_Cur_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Warrant_Segment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Risk_Class" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TK_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Bonus_Amount" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Bonus_Price_in_UL___Bonuslevel" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Cap_Price_in_UL___Cap_Level" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Barrier_Adjustment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Interest_Rate" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Call___Put" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Coupon_in__" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Number_of_Shares" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Coupon_Calculation_Method" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Coupon_Payment_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Outperformance_factor" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Price_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Coupon_Frequency" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Barrier_Observation_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Observation_Period_End_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ISIN_of_Asset_for_Physical_Delivery" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_71_m_" nullable="true" type="id_Character"/>
-      </inputTables>
-    </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
@@ -669,17 +648,191 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Product_Category"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Marketing_Type"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="var1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISIN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WKN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Common_Code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Valoren"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SWX_Trading_Symbol"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Issue_Day"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Value_Day"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_Listing_Date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Underlying_Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Underlying_RIC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Underlying_ISIN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Underly_ing_Currency"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Current_Underlying_Price"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Underlying_Exchange"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Settlement_Currency"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offering"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Quanto__Y_N_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EUWAX_MAX__Spread"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Min_Trading_Size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Min_Exercise_Size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Multiple_Excercise"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Issue_Size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nominal_per_Security"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Up_to_Issue_Size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Automatic_Exercise"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Clearing_Agent"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Settlement_Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Start_Barrier_Determination_Period"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reference_Day"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Settlement_Date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Listing"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Multiplier"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Style__Ameri____Europ__"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stock_Exchange_Listing"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Issue_Price"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FX_Rate_Underl__Settlement_Cur_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warrant_Segment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Risk_Class"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TK_Code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Max__Amount___Strike___Reference_Price___Upper_Strike"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bonus_Amount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bonus_Price_in_UL___Bonuslevel"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cap_Price_in_UL___Cap_Level"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Knock_Out_Level___Barrier_Level___Lower_Strike"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Barrier_Adjustment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Interest_Rate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Call___Put"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Coupon_in__"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Number_of_Shares"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Coupon_Calculation_Method"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Coupon_Payment_Date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Outperformance_factor"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Price_Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Coupon_Frequency"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Barrier_Observation_Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Observation_Period_End_Date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISIN_of_Asset_for_Physical_Delivery"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_71_m_"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_2">
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="11" name="Product_Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="24" name="Marketing_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="var1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="WKN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Common_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Valoren" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SWX_Trading_Symbol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Issue_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Value_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="First_Listing_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Underlying_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Underlying_RIC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Underlying_ISIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Underly_ing_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Current_Underlying_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="Underlying_Exchange" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Settlement_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Offering" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Quanto__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EUWAX_MAX__Spread" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Min_Trading_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Min_Exercise_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiple_Excercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Issue_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Nominal_per_Security" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Up_to_Issue_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Automatic_Exercise" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Clearing_Agent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Settlement_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Start_Barrier_Determination_Period" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Reference_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Settlement_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Last_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Multiplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Style__Ameri____Europ__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="63" name="Stock_Exchange_Listing" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Issue_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FX_Rate_Underl__Settlement_Cur_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Warrant_Segment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Risk_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TK_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Max__Amount___Strike___Reference_Price___Upper_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Bonus_Price_in_UL___Bonuslevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Cap_Price_in_UL___Cap_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Knock_Out_Level___Barrier_Level___Lower_Strike" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Barrier_Adjustment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Interest_Rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Call___Put" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_in__" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Number_of_Shares" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_Calculation_Method" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_Payment_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Outperformance_factor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Price_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Coupon_Frequency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Barrier_Observation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Observation_Period_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ISIN_of_Asset_for_Physical_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="_71_m_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
@@ -912,13 +1065,13 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_2">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_2">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -940,13 +1093,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2b5c9ac9-888b-4db8-b92f-8145e9300f13"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KQmu83MEsWeLoz3VqaZZkp08wFAuBq53ZmlDYOKwVo7PLhHiYPCwMJCc6KYRmai9MrOGrFOMbb0o
-g6hnDeppkA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5ae5d569-4aec-405d-ad82-f5c381d8b32a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MrVWbERjMmbg0t4FlkY4sgf9HRnqTlX/ZE0kku4XWPuy+h/lEpD9/9X3L+T7ocdeucAcDoiNO00a
-8A6fgvzf4A==</DigestValue></Reference></SignedInfo><SignatureValue>0CzF+mLJtQ5E8ZQ2EL4ZAYQY26JI56022fmlFWDkIPesEO+uA5J/GrkxDm3EiGKxkPrd0Ag+nhOQ
-wI03pUjcJCmzhzCFdXlddMqqsCy5mex3mzKG/sgX2S1Zv3eSy2mIAWnI8mOC0h32K4qvVu/oxFI/
-Ik5b+N1MC6Oj/KCAgT8uvBsMMy0HLLW1qCnrzd8LX3oIno4FHY//PAsIYx+ue2xhrzlKZJqEZlG/
-CJvXyYeOC54K4O1TUi8DzxKjzafbAHDA/YYl5Jr47VrOZXUCF/07B8rf+RLnypHjI89mQk5F+IiO
-0OrVwgPVwuOgOiyRvGCEbzORrwGdy7Gk9HA9xQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d8f42d30-92c2-45da-b0f6-3e440f11d9c8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o0GZGKSHcyrLIXzqNLU5NR/rsVSBMia2g97PpifthadjV+62OthHCKwDo7Gp5EufC+2amKA5rjCS
+9ZFtDWl8sg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a7b882dc-4c02-426e-a99e-95e2de4bc6e9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>47m5h8AtOp6MlAPDPsi6IPgI//MJvJGOuU4zCdwJCm4WbVqAT5H3ASsxzl+HDOghaviqv69oEEoj
+AO5miFpSNA==</DigestValue></Reference></SignedInfo><SignatureValue>XqUvAfVsSxxHWB/MgwzI8241AR24yiLcKthRVrQA9xWCThez3I9hrpP/L6Dbh0SS6V0YtOP9trCP
+F3Ixt2YKGc/vFLRqM4kqFNCvy4eG9I/RfdQWrYAK9J7FEH1mPkStS1WRry3wbd4IShVIKZaFUpva
+oMQHtf6g/Fex/3+/5eBiba8qDdjL2bgSbC81cxQC+LcMLwilAjwmRgFhfUCHTukrGP5EjKA6v/is
+lYHAaFvhVUzgfbmmavq17GyIXSi9MzGPEqsp1ld2CMfqdPcMAfksYVN5Hm526EDJpQuIIs1jHhSU
+cNkX+DszMGCXcFw+kueliYt8WiGGin1uTh6V/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -970,4 +1123,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5ae5d569-4aec-405d-ad82-f5c381d8b32a" Target="#_2b5c9ac9-888b-4db8-b92f-8145e9300f13"><Timestamp>2018-08-17 07:06:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a7b882dc-4c02-426e-a99e-95e2de4bc6e9" Target="#_d8f42d30-92c2-45da-b0f6-3e440f11d9c8"><Timestamp>2018-08-17 07:10:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
