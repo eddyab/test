@@ -470,7 +470,7 @@
       <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="384">
+  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_1"/>
     <elementParameter field="TEXT" name="URL" value="&quot;http://wmstest13.local.wmgruppe.de:6786/JVWebservice/jvData?instrName=&quot;+(String)globalMap.get(&quot;WKN&quot;)"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
@@ -482,7 +482,7 @@
       <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="384">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="if(input_row.Body.contains(&quot;not in db&quot;))&#10;&#9;globalMap.put(&quot;Found&quot;,0);&#10;else &#10;&#9;globalMap.put(&quot;Found&quot;,1);&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -492,14 +492,14 @@
       <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="448">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;WKN nicht gefunden&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="160">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/tmp/tmp.csv&quot;"/>
@@ -686,7 +686,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -827,7 +827,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="256">
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteJSONField_1"/>
     <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="output"/>
     <elementParameter field="TABLE" name="ROOT" show="false">
@@ -998,7 +998,7 @@
       <column comment="" key="false" length="-1" name="output" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="160">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -1045,7 +1045,7 @@
       <column comment="" key="false" length="-1" name="Link" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="256">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_3"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -1079,7 +1079,7 @@
       <column comment="" key="false" length="-1" name="output" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="320">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;#KIDs: &quot;+((Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;)));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1111,7 +1111,7 @@
       <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="384">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Anzahl der KIDs prüfen&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1143,7 +1143,7 @@
       <column comment="" key="false" length="1" name="TurnusKIDGenerierung" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="384">
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;jorge-luis.hopkins-sayegh@adesso.de&quot;"/>
@@ -1294,13 +1294,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b3e4381a-c091-4495-a3f5-7719c1ceec37"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V9qfbNr+7d2SZYwVgpYokcnnA0IRlNqWHe+fNfIYhvJG7OVm8/ztYKnWEmrUtbmizW1UvMjeQrM8
-E26M6RltHg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b8164805-f944-4d14-97c3-ae51d94c58eb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pylLQLyTogfCD6buqW/l94UuIQjSGBIiraYuliDwcVHuhq8ySX7o0Oo9T7iAjHMv0fbH91fFron5
-TJx85xH1qg==</DigestValue></Reference></SignedInfo><SignatureValue>F43Ab1EZzgijW0kQEVkwB0f6TqodA1gJQkFaj4bJkPRhng9ZWlLuovWTyeGXEU5/ipv4iA24HEcz
-GNBmR/4RABFxcT6/03ud2ATopGlH/tu6+2CbcU7jsiNjCOHSt6yX6sXB7taRW/SOf5eUudyyRwEb
-3iB9h7q8/AWUX+kep48s0M2KG7V/YK4RinLgxdE2yrfEj5sjSUghRoRNHM1mkI0o6A6lCbo2kk5z
-v9M7E5s23m2pwVX5KMGSQiJKN43z6UKjaGdo+MhmvHijRxddQ7pOxKejHzcOrQ2Av3WKjSU3So2A
-GgGZRpZ68VD0E5lU294/deR/jHWSWTqQIjFeGw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_100239d4-075a-4318-9c1e-8bc0ee1c5a29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gkwPPMO0MgYqpTOtHUzIBSwqK/K2/ZhwMgtSuSgcQa78lbwdu3c7xMzjabgvCy63HGmb7qDNKisz
+EG/6hAA3Kg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_37076240-b1bc-42d3-8329-530336fe4753"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6IjwLNQYpUronRzzfYrMNuhdOJqFlzIVmidK1Pppw6OcUV2cK3a0OKbiKcZXqN7y4+IlYDDOvUsk
+Ids6DaNRLA==</DigestValue></Reference></SignedInfo><SignatureValue>feUWDc7ZO43jTsFCmyp93m5m7M4V6V9XYOrHcMhkm2bDuLGFvv+fw0mLQBCQ5enqFKde6j2fSxHD
+5JuaiUc8WL5mU9nnHJVGZc9y4UtcR4oJBjaorlJjW4mQThxI5tbChmUKh+eCB3b+B4NA/RQpMMSS
+IEJUstKPFRZ1UE0/G/2blwQrBOOSXqW8fl8msR/c9QVBLApOR3WRSItn7j4rl6TwJQVuVvTiAX8A
+pISVmJ7p8/O8x3XEc5lWlVaWDnLCHpmzuq7YAbKn6piiqh+vP7CMDWC/sZo7XBmedQUqqoyO1lUf
+30ilYWMvNOrpAB2eEvp+zXxqE3M83R4gxHYJFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1324,4 +1324,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b8164805-f944-4d14-97c3-ae51d94c58eb" Target="#_b3e4381a-c091-4495-a3f5-7719c1ceec37"><Timestamp>2018-08-20 08:26:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_37076240-b1bc-42d3-8329-530336fe4753" Target="#_100239d4-075a-4318-9c1e-8bc0ee1c5a29"><Timestamp>2018-08-20 08:58:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
