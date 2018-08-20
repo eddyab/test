@@ -16,6 +16,7 @@
     <module>jobs/process/UseCases/usecase_1_0.2</module>
     <module>jobs/process/UseCases/usecase_2_0.1</module>
     <module>jobs/process/UseCases/usecase_3_0.1</module>
+    <module>jobs/process/testjob_0.1</module>
   </modules>
   <properties>
     <talend.project.name>WMDATENSERVICE</talend.project.name>
