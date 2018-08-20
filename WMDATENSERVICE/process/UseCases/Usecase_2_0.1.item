@@ -108,7 +108,6 @@
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/Beispiele Zertifikate/Neuer Ordner/Setup Sheet DS5PAB - DS5PCT 2018_07_17.xls&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
@@ -570,7 +569,6 @@
   </node>
   <node componentName="tBufferOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBufferOutput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tBufferOutput_1">
       <column comment="" key="false" length="11" name="Product_Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -637,7 +635,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((Integer)globalMap.get(&quot;tFileInputExcel_1_NB_LINE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -706,7 +703,6 @@
   </node>
   <node componentName="tBufferInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBufferInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
@@ -780,7 +776,6 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.Product_Category = input_row.Product_Category;&#13;&#10;output_row.Marketing_Type = input_row.Marketing_Type;&#10;output_row.ISIN = input_row.ISIN;&#13;&#10;output_row.WKN = input_row.WKN;&#13;&#10;output_row.Common_Code = input_row.Common_Code;&#13;&#10;output_row.Valoren = input_row.Valoren;&#13;&#10;output_row.SWX_Trading_Symbol = input_row.SWX_Trading_Symbol;&#13;&#10;output_row.Issue_Day = input_row.Issue_Day;&#13;&#10;output_row.Value_Day = input_row.Value_Day;&#13;&#10;output_row.First_Listing_Date = input_row.First_Listing_Date;&#13;&#10;output_row.Underlying_Type = input_row.Underlying_Type;&#13;&#10;output_row.Underlying_RIC = input_row.Underlying_RIC;&#13;&#10;output_row.Underlying_ISIN = input_row.Underlying_ISIN;&#13;&#10;output_row.Underly_ing_Currency = input_row.Underly_ing_Currency;&#13;&#10;output_row.Current_Underlying_Price = input_row.Current_Underlying_Price;&#13;&#10;output_row.Underlying_Exchange = input_row.Underlying_Exchange;&#13;&#10;output_row.Settlement_Currency = input_row.Settlement_Currency;&#13;&#10;output_row.Offering = input_row.Offering;&#13;&#10;output_row.Quanto__Y_N_ = input_row.Quanto__Y_N_;&#13;&#10;output_row.EUWAX_MAX__Spread = input_row.EUWAX_MAX__Spread;&#13;&#10;output_row.Min_Trading_Size = input_row.Min_Trading_Size;&#13;&#10;output_row.Min_Exercise_Size = input_row.Min_Exercise_Size;&#13;&#10;output_row.Multiple_Excercise = input_row.Multiple_Excercise;&#13;&#10;output_row.Issue_Size = input_row.Issue_Size;&#13;&#10;output_row.Nominal_per_Security = input_row.Nominal_per_Security;&#13;&#10;output_row.Up_to_Issue_Size = input_row.Up_to_Issue_Size;&#13;&#10;output_row.Automatic_Exercise = input_row.Automatic_Exercise;&#13;&#10;output_row.Clearing_Agent = input_row.Clearing_Agent;&#13;&#10;output_row.Settlement_Type = input_row.Settlement_Type;&#13;&#10;output_row.Start_Barrier_Determination_Period = input_row.Start_Barrier_Determination_Period;&#13;&#10;output_row.Reference_Day = input_row.Reference_Day;&#13;&#10;output_row.Settlement_Date = input_row.Settlement_Date;&#13;&#10;output_row.Last_Listing = input_row.Last_Listing;&#13;&#10;output_row.Multiplier = input_row.Multiplier;&#13;&#10;output_row.Style__Ameri____Europ__ = input_row.Style__Ameri____Europ__;&#13;&#10;output_row.Stock_Exchange_Listing = input_row.Stock_Exchange_Listing;&#13;&#10;output_row.Issue_Price = input_row.Issue_Price;&#13;&#10;output_row.FX_Rate_Underl__Settlement_Cur_ = input_row.FX_Rate_Underl__Settlement_Cur_;&#13;&#10;output_row.Warrant_Segment = input_row.Warrant_Segment;&#13;&#10;output_row.Risk_Class = input_row.Risk_Class;&#13;&#10;output_row.TK_Code = input_row.TK_Code;&#13;&#10;output_row.Max__Amount___Strike___Reference_Price___Upper_Strike = input_row.Max__Amount___Strike___Reference_Price___Upper_Strike;&#13;&#10;output_row.Bonus_Amount = input_row.Bonus_Amount;&#13;&#10;output_row.Bonus_Price_in_UL___Bonuslevel = input_row.Bonus_Price_in_UL___Bonuslevel;&#13;&#10;output_row.Cap_Price_in_UL___Cap_Level = input_row.Cap_Price_in_UL___Cap_Level;&#13;&#10;output_row.Knock_Out_Level___Barrier_Level___Lower_Strike = input_row.Knock_Out_Level___Barrier_Level___Lower_Strike;&#13;&#10;output_row.Barrier_Adjustment = input_row.Barrier_Adjustment;&#13;&#10;output_row.Interest_Rate = input_row.Interest_Rate;&#13;&#10;output_row.Call___Put = input_row.Call___Put;&#13;&#10;output_row.Coupon_in__ = input_row.Coupon_in__;&#13;&#10;output_row.Number_of_Shares = input_row.Number_of_Shares;&#13;&#10;output_row.Coupon_Calculation_Method = input_row.Coupon_Calculation_Method;&#13;&#10;output_row.Coupon_Payment_Date = input_row.Coupon_Payment_Date;&#13;&#10;output_row.Outperformance_factor = input_row.Outperformance_factor;&#13;&#10;output_row.Price_Type = input_row.Price_Type;&#13;&#10;output_row.Coupon_Frequency = input_row.Coupon_Frequency;&#13;&#10;output_row.Barrier_Observation_Type = input_row.Barrier_Observation_Type;&#13;&#10;output_row.Observation_Period_End_Date = input_row.Observation_Period_End_Date;&#13;&#10;output_row.ISIN_of_Asset_for_Physical_Delivery = input_row.ISIN_of_Asset_for_Physical_Delivery;&#13;&#10;output_row._71_m_ = input_row._71_m_;&#13;&#10;&#10;&#10;&#10;switch(input_row.Marketing_Type){&#10;&#9;case &quot;DiscountZertifikat&quot;:  &#10;&#9;case &quot;DiscountZertifikatQuanto&quot;:&#10;&#9;&#9;&#9; output_row.Kurzform = &quot;DISC.Z&quot;;&#10;&#9;&#9;&#9; break;&#10;&#9;case &quot;BonusZertifikat&quot;:&#10;&#9;&#9;&#9; output_row.Kurzform = &quot;BONUSZ&quot;;&#10;&#9;&#9;&#9; break;&#10;&#9;case &quot;BonusZertifikatmitCap&quot;:&#10;&#9;case &quot;Bonus-Zertifikat mit Cap&quot;:&#10;&#9;&#9;&#9; output_row.Kurzform = &quot;CA.BO.Z&quot;;&#10;&#9;&#9;&#9; break;&#10;&#9;default: &#10;&#9;&#9;&#9; output_row.Kurzform = &quot;Invalid&quot;;&#10;&#9;&#9;&#9; break;&#10;} &#10;&#10;&#10;// Lookup UD022A ? != PT? EO?&#10;&#10;output_row.UD022A = &quot;EO&quot;;&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -851,7 +846,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -878,7 +872,7 @@
       <column comment="" key="false" length="3" name="GD172" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.Product_Category " name="Product_Category" nullable="true" type="id_String"/>
@@ -887,7 +881,7 @@
         <mapperTableEntries expression="row3.WKN " name="WKN" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.Underly_ing_Currency.equals(&quot;EUR&quot;) ? &quot;EO/EUR&quot; : &quot;Invalid&quot; " name="Waehrung_Basiswert" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.Kurzform " name="Kurzform" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Settlement_Type.equals(&quot;Cash Settlement&quot;) ? &quot;bar&quot; : &quot;Lieferung / bar&quot; " name="Settlement" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.Code " name="Settlement" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.Settlement_Type.equals(&quot;Cash Settlement&quot;) ? &quot;3&quot; : &quot;5&quot; " name="UD061" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.UD022A " name="UD022A" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.Underlying_ISIN " name="ISINzuUD021" nullable="true" type="id_String"/>
@@ -957,11 +951,17 @@
         <mapperTableEntries name="Kurzform" nullable="true" type="id_String"/>
         <mapperTableEntries name="UD022A" nullable="true" type="id_String"/>
       </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.Underly_ing_Currency " name="Eintrag" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Faktor" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Repl_3_stellig" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Repl__2_stellig" nullable="true" type="id_String"/>
+      </inputTables>
     </nodeData>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1029,7 +1029,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1075,7 +1074,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1140,7 +1138,6 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/Beispiele Zertifikate/Neuer Ordner/DB.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
@@ -1273,7 +1270,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_3"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/UseC2/UD022A.xls&quot;"/>
@@ -1350,64 +1347,23 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Eintrag"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Faktor"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Repl_3_stellig"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Repl__2_stellig"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
-      <column comment="" key="false" length="6" name="Eintrag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Faktor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Repl_3_stellig" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Repl__2_stellig" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tBufferOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tJava_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tBufferInput_1">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Integer)globalMap.get(&quot;tFileInputExcel_1_NB_LINE&quot;) &gt; 0"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tBufferInput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferInput_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
@@ -1426,7 +1382,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
@@ -1460,20 +1415,17 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="8" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tLogRow_2">
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
@@ -1492,23 +1444,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_3"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_63971fc4-2a07-472b-a810-1a7328995334"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GdEGthvjzv09MwDtDsNU4yWJAcbL9sFrV0YS6Q/B5w7dffTlOBhERrJawZ8yNnJ0sutCgZVoJYAm
-uPahJC1ezw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bb041b2c-b711-4375-9cf9-94669720c790"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>E4z18sOQvxfwPqONXUOqvnxqPFLbZfJOQUuATw+ah8VPnrAp+4Xqb10GkkRe1VpxH3IZ3cFwdS0H
-hM54FS2Xvg==</DigestValue></Reference></SignedInfo><SignatureValue>ollfRO6+ezPb1FkjJ3xYcabzblfDCB94DT87mfzVssQF8bganEe3VXCmdrPXSo0JGhS1P505AgsV
-jWg2p3T9Mu/cAMyTGrXV8om5ZF5Pw5mW1YF1RXtEvISDQLe+ofwIlKeYihi3GkjbKQ0DXxg6BrTj
-L8jk6MqXR23LB2C3sBOutux8h+supg5ExQFC4/zYjfd1WRuSWqnX+ZLE21JqyjopE3jaIPG0Ardd
-n6neYKQvWb1EAI/GXLAWF83uYUjXtmQZtiiWuIqjfBjJqxhmFZnO6HB3fhAwpWIFV2S/vrH4FLih
-uAR7V8HzE7NOs5+IhSJ5eTFY9+mYQOn23lEemw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dcfc1ab1-972a-4f5b-8a42-9c64e2c9ac95"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zA0EtKn0zQWcNJx3VEzDQ5pcJmTqrWDpdx50rg/a2FOUhVRJ6pzPibcX4bf4QyvVh4RO8/MWs6rW
+Ijlzp37aSg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9b9a8d1e-678c-4331-811b-8460c5455842"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wzul2d+1xLPOYMVzjAqLP8g68YaqieqagOgO1a+/kW1EodJgrn0uaT9Fe8Vo3wbqOJea3DfnETDL
+pfjV8YT9uA==</DigestValue></Reference></SignedInfo><SignatureValue>wVGd5zXZRLexDBeZYLUcPRByRp7IfgE3iJ0HN21JFxjLiSUgLerZ2xROICGqOKvwRk8Ol2v0KBGb
+ulVcWTKlcmp4e2ek/HUwlPesu4BlprQ0pc4i3zvmfSZw9WzFFoCT1Pa1FswrKGyfqccHXJeXCgWm
+CC6GPcwwJKHeAhW5CrX2UXovDhbL53FJuq06dLJFspEG4jjPTxfNOa1RCTKAq0xxEUYe6NdkFc2x
+dk/lcGMTcbnE/o+1V37qBtt0SzBnlHTGs3xPjNJoXJiZSHjDQW7Rw5vK024PMDDashmrJOUEyPij
+2zZdIV063mw20IYy1QGphSQWDH2LP6XxHBWMig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1532,4 +1474,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bb041b2c-b711-4375-9cf9-94669720c790" Target="#_63971fc4-2a07-472b-a810-1a7328995334"><Timestamp>2018-08-20 09:33:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9b9a8d1e-678c-4331-811b-8460c5455842" Target="#_dcfc1ab1-972a-4f5b-8a42-9c64e2c9ac95"><Timestamp>2018-08-20 09:35:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
