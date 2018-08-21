@@ -1675,7 +1675,7 @@
       <column comment="" key="false" length="2" name="Schuldnerkuendigung_Turnus_in_Monaten" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="AnzPer" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="KueTurnus" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Schuldnerkuendigung_erstmalig" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KueTag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -1689,7 +1689,7 @@
         <mapperTableEntries expression="row8.Schuldnerkuendigung_Turnus_in_Monaten " name="Schuldnerkuendigung_Turnus_in_Monaten" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row8.Schuldnerkuendigung_Turnus_in_Monaten == 12? &quot;1&quot; : &quot;Nicht valide&quot;" name="AnzPer" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.KeyPer.equals(&quot;1&quot;) ? &quot;jährlich&quot; : &quot;Nicht valide&quot;" name="KueTurnus" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row8.Schuldnerkuendigung_erstmalig " name="Schuldnerkuendigung_erstmalig" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row8.Schuldnerkuendigung_erstmalig " name="KueTag" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row8" sizeState="INTERMEDIATE">
         <mapperTableEntries name="WKN" nullable="true" type="id_String"/>
@@ -1748,12 +1748,14 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out3">
       <column comment="" key="false" length="-1" name="KueTurnus" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="639" name="Eintrag__TextGD941__Schuldner_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out3" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="output1.KueTurnus " name="KueTurnus" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.EREPLACE(row9.Eintrag__TextGD941__Schuldner_,&quot;{[Km]}&quot;,&quot;,&quot;) " name="Eintrag__TextGD941__Schuldner_" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="output1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="WKN" nullable="true" type="id_String"/>
@@ -1762,7 +1764,7 @@
         <mapperTableEntries name="Schuldnerkuendigung_Turnus_in_Monaten" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="AnzPer" nullable="true" type="id_String"/>
         <mapperTableEntries name="KueTurnus" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Schuldnerkuendigung_erstmalig" nullable="true" type="id_String"/>
+        <mapperTableEntries name="KueTag" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row9" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="output1.MWKN " name="Eintrag___" nullable="true" operator="=" type="id_String"/>
@@ -1858,12 +1860,15 @@
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="KueTurnus"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Eintrag__TextGD941__Schuldner_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="-1" name="KueTurnus" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="639" name="Eintrag__TextGD941__Schuldner_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
@@ -2087,7 +2092,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="KueTurnus"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Schuldnerkuendigung_erstmalig"/>
+      <elementValue elementRef="TRACE_COLUMN" value="KueTag"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -2097,6 +2102,9 @@
   <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="KueTurnus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eintrag__TextGD941__Schuldner_"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -2137,13 +2145,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9a231c23-479a-459c-80d3-a2694dfeaf9d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HHpE0gN42Pl9EROsxsmEDgq+txFyztTffOGWay7TojQzC6orwVcWrlqcjhilWdxVrgSyzi8qoJXW
-7BQwe1v5Aw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c80e2083-5af5-4a89-9c18-b8dbe079517f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>55dk2k1zxy+Oi/0TKbzpfem2CvK6XAByQyb+Ghs5YKKNi2/bisedQsN0yPqSV+7fasYwp9/CExWC
-xZ25JbH6bw==</DigestValue></Reference></SignedInfo><SignatureValue>PdTjsN6LcAak30xNWk5apR6YB4Y2yQc2KwKzaCpVYYkw1gLM43F+c8XGG2k3N5LT9LO0HRTkpo6/
-ZHbCrflz9I/y6fiPlhkdOHbW1LGI+229CsEFOUWDblKr1NprWzqyz7V6MPCeTvD3oXECNLmd0P4n
-J76RzUzxfYVgldZorFSLaH96qh3MmcQSK4CViMK0Hm5d/Kn9ARZZB4eb7V2YHHMdYdrYyNZiRMIq
-JCZ9qAPrr3m/eUvc5JfvyoxyzS/qdMWn/GDfLr/XnYDrG5D+Ie6gTcWFrKis5zp1cgnjiZ7bSCyM
-iKrM8P9imjIh8lUHOFjX5//BxspOU9jcZSpiew==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_255ce3c3-06d7-42c5-bb73-f60a23190960"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/HmBU5GOQtuQN9+XukCjpI+ymTgqWhXaG5FuhUCPcqT78qavlNI6lrU2bjTdmQ/PFk3OiWDDRTfn
+c2RlC3oeSQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7b2914bc-1ed0-4a02-9d30-84c078b15139"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NCdzEcpwHULPUR/HUboAQR3XYNW34x05GH3Ge6+DdEU6w7mur/fB2fG9hM72Pn0CUWbj8ExPAmlB
+iwq0Ou1QlQ==</DigestValue></Reference></SignedInfo><SignatureValue>gELNYha4KyFw7ymlwzpyDq7A2I4hPdSIp8S9tWdrWH/sJX835P81d0Bq+P3h1qcq2C9Mahf8dUyr
+3Y/kvwNaVsRfSoOxrJjwYFyhj1gLNkdo8Jg6mvsMUbpNW5Ba6urWwlKRWgwI8evrA0QiX2+btG/W
+pj1RYT2ziADTE4UyHKC3QqGK5nSvpHrRx1nq0n0pKj2Jc2xylKAfVlEJIUt2IL2sPlQbFq2GiQiH
+5EKqjvhXdOduRrFW7NN5WHfFtSuHBBfNVT4TLMMwnmdvptyCK/5g0HdEf11eWVLiw6e64h3CxsFy
+ALXjhDOxiiNsrISziC4yS1/o55560oFIjq5y/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2167,4 +2175,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c80e2083-5af5-4a89-9c18-b8dbe079517f" Target="#_9a231c23-479a-459c-80d3-a2694dfeaf9d"><Timestamp>2018-08-21 07:24:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7b2914bc-1ed0-4a02-9d30-84c078b15139" Target="#_255ce3c3-06d7-42c5-bb73-f60a23190960"><Timestamp>2018-08-21 07:28:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
