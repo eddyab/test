@@ -47,12 +47,12 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>log4j-1.2.16</artifactId>
+      <artifactId>jakarta-oro-2.0.8</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>postgresql-9.4-1201.jdbc41</artifactId>
+      <artifactId>log4j-1.2.16</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
