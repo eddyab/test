@@ -195,7 +195,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="480">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_2bNAoKUgEeidKb5ZEWlUIw - metadata"/>
@@ -342,7 +342,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="480">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -432,7 +432,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tBufferInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
+  <node componentName="tBufferInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBufferInput_1"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
@@ -447,7 +447,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="480">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.Status_Kennzeichen = input_row.Status_Kennzeichen;&#13;&#10;output_row.WKN = input_row.WKN;&#13;&#10;output_row.ISIN = input_row.ISIN;&#13;&#10;output_row.PRIIP_Kennzeichen = input_row.PRIIP_Kennzeichen;&#13;&#10;output_row.KID_vorhanden = input_row.KID_vorhanden;&#13;&#10;output_row.Erstellung_KID = input_row.Erstellung_KID;&#13;&#10;output_row.Turnus_KID_Generierung = input_row.Turnus_KID_Generierung;&#13;&#10;output_row.SRI_KID = input_row.SRI_KID;&#13;&#10;output_row.Methode = input_row.Methode;&#13;&#10;output_row.KID_Warnhinweis = input_row.KID_Warnhinweis;&#13;&#10;output_row.KID_Version = input_row.KID_Version;&#13;&#10;output_row.KID_Sprache = input_row.KID_Sprache;&#13;&#10;output_row.KID_Aktualisierung = input_row.KID_Aktualisierung;&#13;&#10;output_row.KID_Bestimmungsland = input_row.KID_Bestimmungsland;&#13;&#10;output_row.Link = input_row.Link;&#13;&#10;output_row._71_m_ = input_row._71_m_;&#13;&#10;output_row.Simple_Complex = input_row.Simple_Complex;&#13;&#10;output_row.interfc = input_row.interfc;&#13;&#10;output_row.senderID = input_row.senderID;&#13;&#10;output_row.messageType = input_row.messageType;&#13;&#10;output_row.date = input_row.date;&#10;&#10;&#10;globalMap.put(&quot;WKN&quot;,input_row.WKN);&#10;globalMap.put(&quot;interfc&quot;,input_row.interfc);&#10;globalMap.put(&quot;senderID&quot;,input_row.senderID);&#10;globalMap.put(&quot;messageType&quot;,input_row.messageType);&#10;globalMap.put(&quot;date&quot;,input_row.date);&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -476,7 +476,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="480">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -568,7 +568,7 @@
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="544">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/tmp/tmp.csv&quot;"/>
@@ -737,7 +737,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="544">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -776,7 +776,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="asdas" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.RESULT_OK " name="RESULT_OK" type="id_Integer"/>
@@ -825,12 +825,12 @@
         <mapperTableEntries name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries name="date" nullable="true" type="id_String"/>
       </inputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row5" sizeState="INTERMEDIATE">
+      <inputTables activateCondensedTool="true" lookupMode="RELOAD" matchingMode="ALL_ROWS" name="row5" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RESULT_OK" type="id_Integer"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="416">
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -875,7 +875,7 @@
       <column comment="" key="false" length="-1" name="RESULT_OK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="544">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1178,13 +1178,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4fad85f7-142c-4cc8-95f4-553dd4526bdf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>agAMdQmhEs4574SK4+EmhUC3VgEcnjU+CxrhYxyY+KX5jkhqou2JPR4obUTbKY+ikjooN5XaLc57
-uYII7utgcQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d24236d0-27ee-4d3b-aa22-00f6d2206ba7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sdgvg0oXnCXkZLitPUVMRGUrDAb3Op5umzGL0+YFNhsJ16q2Lmke6eM7dVUy2DNudFWsp2T7oEsx
-UcG3YD1ooA==</DigestValue></Reference></SignedInfo><SignatureValue>KHyb5uxA9s/JF+1ieQEEw5wijVpbt2HS2Sw9I3L+O6u4yJ3w6O1BTQREbjoNPLXbDiOec/wvT9Jo
-mamfPr9fwn3YTsl3HMOwM+l9YOz9Sid45koZiCN4XkOu+Qm/4/XRCPTdOzSh4I5h1DRAWH+Dnncc
-nz0CIB0JBZmgTiT2XAlBnI7zr+u80ZJcALv9jLmHkG15y/wirn4uGAS6EF4LdThw7nN6iUG9lic/
-qmV+jANG9uW6WUhqupwiHo1rc6YNpGwLjzKyFANZxeuPNa0qoa8pnKwP/KcvBUQqZfA2llI3b6j6
-0fTXkWaljNhpg44G16ems0uXiFhZ5kMb+X1u7w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_086aad15-c328-4bcd-86fe-06d20daf5773"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>coYVucjeAuSKnBjN2MUZ1MHiWNweBVjjWF8WhfEK+h0Mhu5l9BBs4jNU042yjb18exZZOO3/ygFp
+Yyt6hn8uOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1290c69b-9f90-4e3d-819b-316a1a0843b7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>67aqsuk538RbUUiDNBC1Y1yEPxlybGzP06oax8JaBkz7/VnyV7lpEOO4ah5LvO5EsBNp6ahEJJEk
+/k6GnnzuKA==</DigestValue></Reference></SignedInfo><SignatureValue>31c6ivWrRRU6QTkm3If2S9yAgihWaHaleGNGiWaRa+DGX6hHsSHijQ4xD9t3nf+QM1LPYN/H9PSz
+6iNxm4vBM208wTJVjUjIOW4IiQDkFr1MCJUJVmatR2BD9SO8SC5FSB1f8STQlAuGIAsZXukuhf7x
+WDdpC5goIBumLayMISnhUCToHMsYBzfuSPPexWB/bX+hIboGKHwylck8TcI4Tz0g7sqqREVNYrBw
+cm77r/3wKerYBGC3Tl1lupHPxH0yVZ4/XaoxWLymwGuQFL4cm2DOCRWuZ1lE5fFcPPiR/bV7gEbQ
+WthgsHndxZJ8eZhCBrD0L7YZIh6vW3OENLVHeg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1208,4 +1208,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d24236d0-27ee-4d3b-aa22-00f6d2206ba7" Target="#_4fad85f7-142c-4cc8-95f4-553dd4526bdf"><Timestamp>2018-08-22 06:57:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1290c69b-9f90-4e3d-819b-316a1a0843b7" Target="#_086aad15-c328-4bcd-86fe-06d20daf5773"><Timestamp>2018-08-22 06:59:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
