@@ -18,9 +18,9 @@
     <module>jobs/process/testjob_0.1</module>
     <module>jobs/joblets/joblet1_0.1</module>
     <module>jobs/process/UseCases/usecase_3_1_0.1</module>
-    <module>jobs/process/UseCases/UseCases/usecase_3_0.1</module>
     <module>jobs/process/UseCases/mail_0.1</module>
     <module>jobs/process/UseCases/usecase_1_norest_0.2</module>
+    <module>jobs/process/UseCases/usecase_3_0.1</module>
   </modules>
   <properties>
     <talend.project.name>WMDATENSERVICE</talend.project.name>
