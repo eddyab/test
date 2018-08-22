@@ -20,6 +20,7 @@
     <module>jobs/process/UseCases/usecase_3_1_0.1</module>
     <module>jobs/process/UseCases/UseCases/usecase_3_0.1</module>
     <module>jobs/process/UseCases/mail_0.1</module>
+    <module>jobs/process/UseCases/copy_of_usecase_1_0.2</module>
   </modules>
   <properties>
     <talend.project.name>WMDATENSERVICE</talend.project.name>

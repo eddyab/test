@@ -224,6 +224,20 @@
       <relatedItems xmi:id="_RZfxGqU3EeiqPcT8sgtPrQ" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_RZfxG6U3EeiqPcT8sgtPrQ" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_2GMiQKXWEeiCp7uTJxMctQ">
+      <baseItem xmi:id="_2GNJUKXWEeiCp7uTJxMctQ" id="_2A-EAKXWEeiCp7uTJxMctQ" version="0.2" type="job"/>
+      <relatedItems xmi:id="_2GNJUaXWEeiCp7uTJxMctQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJUqXWEeiCp7uTJxMctQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJU6XWEeiCp7uTJxMctQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJVKXWEeiCp7uTJxMctQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJVaXWEeiCp7uTJxMctQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJVqXWEeiCp7uTJxMctQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJV6XWEeiCp7uTJxMctQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJWKXWEeiCp7uTJxMctQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJWaXWEeiCp7uTJxMctQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJWqXWEeiCp7uTJxMctQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2GNJW6XWEeiCp7uTJxMctQ" id="_3QTpwKCYEeiHE5DYzm7eBg - metadata" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_KkrRwJ-6Eeigd_JyuOkbGQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_KkrRwZ-6Eeigd_JyuOkbGQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_Kkr40J-6Eeigd_JyuOkbGQ" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
