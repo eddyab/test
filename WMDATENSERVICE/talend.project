@@ -239,6 +239,7 @@
       <relatedItems xmi:id="_xhqL26XxEeiCp7uTJxMctQ" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_xhqL3KXxEeiCp7uTJxMctQ" id="_2bNAoKUgEeidKb5ZEWlUIw - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_9J-U8KYAEeiYnoFBaHtMEA" id="MD5" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RUPugKYEEeiYnoFBaHtMEA" id="_LFovsKUeEeidKb5ZEWlUIw" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_KkrRwJ-6Eeigd_JyuOkbGQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_KkrRwZ-6Eeigd_JyuOkbGQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
