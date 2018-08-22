@@ -239,6 +239,20 @@
       <relatedItems xmi:id="_2GNJWqXWEeiCp7uTJxMctQ" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_2GNJW6XWEeiCp7uTJxMctQ" id="_3QTpwKCYEeiHE5DYzm7eBg - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_xhqL0KXxEeiCp7uTJxMctQ">
+      <baseItem xmi:id="_xhqL0aXxEeiCp7uTJxMctQ" id="_n7KLoKXxEeiCp7uTJxMctQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_xhqL0qXxEeiCp7uTJxMctQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL06XxEeiCp7uTJxMctQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL1KXxEeiCp7uTJxMctQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL1aXxEeiCp7uTJxMctQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL1qXxEeiCp7uTJxMctQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL16XxEeiCp7uTJxMctQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL2KXxEeiCp7uTJxMctQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL2aXxEeiCp7uTJxMctQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL2qXxEeiCp7uTJxMctQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL26XxEeiCp7uTJxMctQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xhqL3KXxEeiCp7uTJxMctQ" id="_2bNAoKUgEeidKb5ZEWlUIw - metadata" version="Latest" type="schema"/>
+    </ItemsRelations>
     <deletedFolders>process/UseCases/UseCases</deletedFolders>
     <migrationTask xmi:id="_KkrRwJ-6Eeigd_JyuOkbGQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_KkrRwZ-6Eeigd_JyuOkbGQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
