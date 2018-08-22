@@ -12,7 +12,6 @@
     <module>code/routines</module>
     <module>jobs/process/UseCases/usecase_1_0.1</module>
     <module>jobs/process/testrest_0.1</module>
-    <module>jobs/process/UseCases/testing_0.1</module>
     <module>jobs/process/UseCases/usecase_1_0.2</module>
     <module>jobs/process/UseCases/usecase_2_0.1</module>
     <module>jobs/process/testjob_0.1</module>
