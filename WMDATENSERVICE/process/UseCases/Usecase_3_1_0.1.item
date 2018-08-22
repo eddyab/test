@@ -162,9 +162,10 @@
       <column key="false" length="255" name="messageType" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="StringHandling.LEFT(row2.basename,StringHandling.INDEX(row2.basename ,&quot;_&quot;)) " name="senderID" type="id_String"/>
       </varTables>
@@ -173,6 +174,7 @@
         <mapperTableEntries expression="StringHandling.RIGHT(row2.dirname,StringHandling.LEN(row2.dirname)-row2.dirname.lastIndexOf(&quot;\\&quot;)-1) " name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.senderID " name="senderID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;2018-08-21&quot;" name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.RIGHT(row2.abs_path,StringHandling.LEN(row2.abs_path)-row2.abs_path.lastIndexOf(&quot;\\&quot;)-1) " name="fileName" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="abs_path" nullable="true" type="id_String"/>
@@ -220,6 +222,7 @@
       <column key="false" length="255" name="messageType" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="448">
@@ -236,7 +239,7 @@
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="TEXT" name="LIMIT" value="5"/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -405,6 +408,7 @@
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="messageType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -431,6 +435,7 @@
         <mapperTableEntries expression="row1.senderID " name="senderID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.messageType " name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.WKN.equals(&quot;DDE7PF&quot;) ? &quot;2000-01-01&quot; : row1.date " name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.fileName " name="fileName" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Status_Kennzeichen" nullable="true" type="id_String"/>
@@ -456,12 +461,13 @@
         <mapperTableEntries name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries name="senderID" nullable="true" type="id_String"/>
         <mapperTableEntries name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="fileName" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.Status_Kennzeichen = input_row.Status_Kennzeichen;&#13;&#10;output_row.WKN = input_row.WKN;&#13;&#10;output_row.ISIN = input_row.ISIN;&#13;&#10;output_row.PRIIP_Kennzeichen = input_row.PRIIP_Kennzeichen;&#13;&#10;output_row.KID_vorhanden = input_row.KID_vorhanden;&#13;&#10;output_row.Erstellung_KID = input_row.Erstellung_KID;&#13;&#10;output_row.Turnus_KID_Generierung = input_row.Turnus_KID_Generierung;&#13;&#10;output_row.SRI_KID = input_row.SRI_KID;&#13;&#10;output_row.Methode = input_row.Methode;&#13;&#10;output_row.KID_Warnhinweis = input_row.KID_Warnhinweis;&#13;&#10;output_row.KID_Version = input_row.KID_Version;&#13;&#10;output_row.KID_Sprache = input_row.KID_Sprache;&#13;&#10;output_row.KID_Aktualisierung = input_row.KID_Aktualisierung;&#13;&#10;output_row.KID_Bestimmungsland = input_row.KID_Bestimmungsland;&#13;&#10;output_row.Link = input_row.Link;&#13;&#10;output_row._71_m_ = input_row._71_m_;&#13;&#10;output_row.Simple_Complex = input_row.Simple_Complex;&#13;&#10;output_row.interfc = input_row.interfc;&#13;&#10;output_row.senderID = input_row.senderID;&#13;&#10;output_row.messageType = input_row.messageType;&#13;&#10;output_row.date = input_row.date;&#10;&#10;&#10;globalMap.put(&quot;WKN&quot;,input_row.WKN);&#10;globalMap.put(&quot;interfc&quot;,input_row.interfc);&#10;globalMap.put(&quot;senderID&quot;,input_row.senderID);&#10;globalMap.put(&quot;messageType&quot;,input_row.messageType);&#10;globalMap.put(&quot;date&quot;,input_row.date);&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#13;&#10;output_row.Status_Kennzeichen = input_row.Status_Kennzeichen;&#13;&#10;output_row.WKN = input_row.WKN;&#13;&#10;output_row.ISIN = input_row.ISIN;&#13;&#10;output_row.PRIIP_Kennzeichen = input_row.PRIIP_Kennzeichen;&#13;&#10;output_row.KID_vorhanden = input_row.KID_vorhanden;&#13;&#10;output_row.Erstellung_KID = input_row.Erstellung_KID;&#13;&#10;output_row.Turnus_KID_Generierung = input_row.Turnus_KID_Generierung;&#13;&#10;output_row.SRI_KID = input_row.SRI_KID;&#13;&#10;output_row.Methode = input_row.Methode;&#13;&#10;output_row.KID_Warnhinweis = input_row.KID_Warnhinweis;&#13;&#10;output_row.KID_Version = input_row.KID_Version;&#13;&#10;output_row.KID_Sprache = input_row.KID_Sprache;&#13;&#10;output_row.KID_Aktualisierung = input_row.KID_Aktualisierung;&#13;&#10;output_row.KID_Bestimmungsland = input_row.KID_Bestimmungsland;&#13;&#10;output_row.Link = input_row.Link;&#13;&#10;output_row._71_m_ = input_row._71_m_;&#13;&#10;output_row.Simple_Complex = input_row.Simple_Complex;&#13;&#10;output_row.interfc = input_row.interfc;&#13;&#10;output_row.senderID = input_row.senderID;&#13;&#10;output_row.messageType = input_row.messageType;&#13;&#10;output_row.date = input_row.date;&#10;output_row.fileName = input_row.fileName;&#10;&#10;&#10;globalMap.put(&quot;WKN&quot;,input_row.WKN);&#10;globalMap.put(&quot;interfc&quot;,input_row.interfc);&#10;globalMap.put(&quot;senderID&quot;,input_row.senderID);&#10;globalMap.put(&quot;messageType&quot;,input_row.messageType);&#10;globalMap.put(&quot;date&quot;,input_row.date);&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
@@ -486,6 +492,7 @@
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="messageType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="448">
@@ -525,6 +532,7 @@
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="messageType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -552,6 +560,7 @@
         <mapperTableEntries expression="row6.senderID " name="senderID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row6.messageType " name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row6.date " name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row6.fileName " name="fileName" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row6" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Status_Kennzeichen" nullable="true" type="id_String"/>
@@ -575,6 +584,7 @@
         <mapperTableEntries name="senderID" nullable="true" type="id_String"/>
         <mapperTableEntries name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="fileName" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables activateCondensedTool="true" lookupMode="RELOAD" matchingMode="ALL_ROWS" name="row5" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RESULT" type="id_Integer"/>
@@ -678,6 +688,11 @@
       <column comment="" key="false" length="1" name="_71_m_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Simple_Complex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Fehler_Code" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="interfc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="messageType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -720,6 +735,11 @@
         <mapperTableEntries expression="out3._71_m_ " name="_71_m_" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="out3.Simple_Complex " name="Simple_Complex" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="out3.RESULT" name="Fehler_Code" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="out3.interfc " name="interfc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out3.senderID " name="senderID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out3.messageType " name="messageType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out3.date " name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out3.fileName " name="fileName" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out3" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RESULT" type="id_Integer"/>
@@ -744,6 +764,7 @@
         <mapperTableEntries name="senderID" nullable="true" type="id_String"/>
         <mapperTableEntries name="messageType" nullable="true" type="id_String"/>
         <mapperTableEntries name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="fileName" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -779,6 +800,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
@@ -795,6 +818,8 @@
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
       <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fileName"/>
+      <elementValue elementRef="DECODE" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -804,12 +829,14 @@
       <column key="false" length="255" name="messageType" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="interfc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="messageType" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="senderID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;yyyy-mm-dd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fileName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -828,9 +855,15 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out4">
+      <column comment="" key="false" length="-1" name="Fehler_meldung" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out4" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="&quot;Sender '&quot;+ DEK_NEIN.senderID +&quot;' is not authorized for WKN/ISIN '&quot;+DEK_NEIN.WKN+&quot;/&quot;+DEK_NEIN.ISIN+&#13;&#10;&#9;&quot;' type &quot;+DEK_NEIN.messageType+&quot; via &quot;+DEK_NEIN.interfc+&#13;&#10;&#9;&quot; (date: &quot;+DEK_NEIN.date+&quot;) (file: &quot;+DEK_NEIN.fileName+&#13;&#10;&#9;&quot;) reason: &quot;+DEK_NEIN.Fehler_Code+&quot;:&quot;+row4.Code " name="Fehler_meldung" nullable="true" type="id_String"/>
+      </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="DEK_NEIN" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Status_Kennzeichen" nullable="true" type="id_String"/>
         <mapperTableEntries name="WKN" nullable="true" type="id_String"/>
@@ -850,6 +883,16 @@
         <mapperTableEntries name="_71_m_" nullable="true" type="id_Character"/>
         <mapperTableEntries name="Simple_Complex" nullable="true" type="id_Character"/>
         <mapperTableEntries name="Fehler_Code" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="interfc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="senderID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="messageType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="fileName" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="DEK_NEIN.Fehler_Code " name="Code_Num" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Typ" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -901,6 +944,93 @@
       <column comment="" key="false" length="183" name="Link" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="_71_m_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Simple_Complex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_hpAxwKXpEeiCp7uTJxMctQ - metadata"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/UseC3/authorization_codes.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/admin/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Num"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Typ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Num"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Typ"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
+      <column comment="" key="false" length="2" name="Code_Num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="131" name="Typ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="Code_Num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="131" name="Typ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fehler_meldung"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="Fehler_meldung" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
@@ -967,69 +1097,6 @@
       <column comment="" key="false" length="-1" name="Fehler_Code" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="672">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_hpAxwKXpEeiCp7uTJxMctQ - metadata"/>
-    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Documents/Usecase/UseC3/authorization_codes.csv&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="HEADER" value="1"/>
-    <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
-    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
-    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/admin/workspace&quot;"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="RANDOM" value="false"/>
-    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Num"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Typ"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
-    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
-    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Num"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Typ"/>
-      <elementValue elementRef="DECODE" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
-      <column comment="" key="false" length="2" name="Code_Num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="131" name="Typ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="2" name="Code_Num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="131" name="Typ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileProperties_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
@@ -1040,6 +1107,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
@@ -1054,14 +1126,29 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
   <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
   </connection>
@@ -1074,6 +1161,23 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DEK_JA"/>
   </connection>
   <connection connectorName="FLOW" label="DEK_NEIN" lineStyle="0" metaname="DEK_NEIN" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="senderID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="messageType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="interfc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DEK_NEIN"/>
   </connection>
@@ -1091,9 +1195,25 @@
       <elementValue elementRef="TRACE_COLUMN" value="interfc"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out4" lineStyle="0" metaname="out4" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Fehler_meldung"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFileList_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
@@ -1118,18 +1238,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fa77902e-5d01-4635-a0ab-f9d3f7c0360b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fPOS6WimTt7BUAhZMPz0sb7rJKjNc7hmAL4PqeDO2KQEsVJCl4BNzJJmYop67tVcG9K35T6qDUPG
-DF4vjozWEg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2ed192c6-07c3-41d6-af70-ed19c8734ac2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Zu0C0vLobD4qgHOffC7Z9KuaHgpBaxc2l0TikLdlkAH/Xwd118nV6QtofBMcwZ5jqKWV8n+AMGVJ
-ra6ofHnV1Q==</DigestValue></Reference></SignedInfo><SignatureValue>yeBVopZLE9MBUssJp5fvZRX414UoJOi5+pfZMp+lSsyiOK7cAvlLEN8cr/PtaYL2JXeU+y+Q5/PV
-BYi2zpfGpGho0E6uLoKawGAgoLDy7SNTPN0b4KSEU77OkFZV/h3e5PFZNjgfk2Ii8QdLR/3Ja7oe
-r5Hq7DCHFqcgJxPyeoIqZK0hr1oZC5aVx+G94Oj3c7JQPp0smUwil/J3aqBNBVAn0H9wrpPRGWni
-VPUUQlnfNcCTtHY5LA6npl2HWBscmTwn+iHooI7WPkNKcJnKjOVaueLXZLpQORcsDB5JMNLlsv6t
-6lUoydjcY60Wp3Wr/9waMh2YXzusYa+5iROp2w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ce18bd3d-3c62-4ed2-839b-5b344e3bce96"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sXkeCXXGvDwDe7S2paMwoPrskeJ/vlDhLsjz1nY6n35hqWLTptRQwi3rtmysZlofVPj5jp/KsTlt
+GtXLeIifhw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e612169c-1961-4026-aff0-b9a739d53ea8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2bJXpP0M4D7gm+YBl/mDADq0mzU5OIP2bo51dWEO3hQvSvYd2XnteT2CDNaaK5eudmwkYt7vNjxH
+AK5z591LYw==</DigestValue></Reference></SignedInfo><SignatureValue>WgG0p0tqASAj3FCm/4Mm5n8O2V+ZizWnW3ggA1Wtigk1TK9qP6PwKTUxGS2lv37pHKNB81u0ndJR
+H1arp8yhmI8zfid0RPsD/4OBMtuFq7YqrahAkV5Tz9OVwdlvjW4ZYbGhCvjE/7bcZGo7IbyreMZG
+DCzvMeudiUIPqIuJDYf62CHcO7hDMNFqNLFI80HU0/3J6eBER39xn/pRucYm5uQJezh4T7GcINMW
+K7HOX/mmlG4OEEOmkfUZoDEmjX4Zazln9HdIMJ3pom+xSBao0sST5KQyseNvPzWDtUd07XccaRww
+ylje6BB2tEx6azNVtBKsHnqMK9mgDe4UhWAB+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1153,4 +1268,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2ed192c6-07c3-41d6-af70-ed19c8734ac2" Target="#_fa77902e-5d01-4635-a0ab-f9d3f7c0360b"><Timestamp>2018-08-22 09:03:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e612169c-1961-4026-aff0-b9a739d53ea8" Target="#_ce18bd3d-3c62-4ed2-839b-5b344e3bce96"><Timestamp>2018-08-22 09:20:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
