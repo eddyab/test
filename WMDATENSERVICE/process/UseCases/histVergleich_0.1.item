@@ -756,7 +756,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;New File: &quot;+&#10;&#9;new Float((Integer)globalMap.get(&quot;tFileInputDelimited_2_NB_LINE&quot;))+&quot;\nDurchschnitt: &quot;+&#10;&#9;new Float((Integer)globalMap.get(&quot;Durchschnitt&quot;))&#10;&#9;);&#10;&#10;System.out.println(&quot;Abweichung: &quot;+&#10;&#9;Math.abs((new Float((Integer)globalMap.get(&quot;tFileInputDelimited_2_NB_LINE&quot;))-&#10;&#9;new Float((Integer)globalMap.get(&quot;Durchschnitt&quot;)))&#10;&#9;/&#10;&#9;new Float((Integer)globalMap.get(&quot;Durchschnitt&quot;)))&#10;&#9;);&#10;&#9;&#10;&#9;&#10;&#9;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Ankommende Datei: &quot;+&#10;&#9;new Float((Integer)globalMap.get(&quot;tFileInputDelimited_2_NB_LINE&quot;))+&quot;\nDurchschnitt: &quot;+&#10;&#9;new Float((Integer)globalMap.get(&quot;Durchschnitt&quot;))&#10;&#9;);&#10;&#10;System.out.println(&quot;Abweichung: &quot;+&#10;&#9;Math.abs((new Float((Integer)globalMap.get(&quot;tFileInputDelimited_2_NB_LINE&quot;))-&#10;&#9;new Float((Integer)globalMap.get(&quot;Durchschnitt&quot;)))&#10;&#9;/&#10;&#9;new Float((Integer)globalMap.get(&quot;Durchschnitt&quot;)))&#10;&#9;);&#10;&#9;&#10;&#9;&#10;&#9;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -1813,13 +1813,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_74eedc01-6caf-468f-9bd3-1bde6553bb9e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cpPWcOxuhB6MN3CbbNcUHmH1XZEObB0k30+jkCx1Y7zvNuW1/TUF/7mdqJKgMLpvUjCaEmIpGZ2t
-QJktj8620g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7c498cb8-2ff8-459a-9b1a-7da21648ed1a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W7jgIPmOXph8KBv9QRXH4pOPiAMeyswVPtfGAeRUgdHUv8bieFD+0Xc31HPpYgBmyM+1pKyn9Cd6
-RF4FcWxZXg==</DigestValue></Reference></SignedInfo><SignatureValue>tT1qZGsPpNeIPtCNQeAjkYTko7RNAT53/NsejKnNIN9ctXWWIkCWMK6Me5XiBi7ptl13WKq0m/aB
-YuCbsQHNDijh7xeUnNDSzM0P/T5zxoaKme3SoYmcnjQ6ILC+pZv9WvpYnrkN/mKcvT1+PZH9ICx2
-W3y/sNHUNeQv0s6HIuFFtcAOVmxeFKKeeGdaLMs/72eQER5lvAE7NFOG80kXJ7HL66vSbJoI81z5
-uD4yGc+n0AdHpSMz+Vt+/1DrN+BIMe6dVsF947bnObd5s4JhXCJ1J/W7mlwsBML7nZbMtGF694rV
-/4wovW0ElxW1nzkqLnPgEKfBMSLvfnuudqJAAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c11f9f85-d1a5-40bf-880b-afdc2891ab4e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wu8I1sEcWK8OwKzDN5Rdvvz5PLXGVFa9BF8WzOhq7ibkyKd1v1375DsMp37I2EFNO+/qRMhP5OTK
+SIZj/RG2uQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6a206609-516d-4ce8-a6c3-7360caa653f6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e35K8xRe8+Sq6ogh5Jz2poWEjjB0pzFTXGmDgajGJVmIojtJA6rNIUEImuAfmhO3Sa5S7u0XN7uO
+FEUbgCHBEg==</DigestValue></Reference></SignedInfo><SignatureValue>ldlJIlKfC0pITeyB/PJT3LiTU57SraqYJIEE0MaYX9tYM/2YcZqgI+PiIS9txge3fd0xG7KSeNXz
+DcOP7W5YuICuqeZ77dxJ+YjaLaJ+pkTynAxH/NGiZP6PE9KwuSwj4T3hi1EW0HrLJr5X+JQJhJsu
+cGjTrdeLYebdJcWXltQUphWt50oQYM+8euVW9EJDJhwHsw47IWlmC25pw5njt3Jul9YSbTHxWWQV
+oDRNKTDfDerfSxbueI/DUxBVaS7FqqA2fCDyfwoI7/37eFFqSrIqr0fACD8cbG3202QeeNMiy4od
+MOHe0shCl8X/aMOJhjnnSK/wRr4ZY0tglxsHXA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1843,4 +1843,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7c498cb8-2ff8-459a-9b1a-7da21648ed1a" Target="#_74eedc01-6caf-468f-9bd3-1bde6553bb9e"><Timestamp>2018-08-23 08:36:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6a206609-516d-4ce8-a6c3-7360caa653f6" Target="#_c11f9f85-d1a5-40bf-880b-afdc2891ab4e"><Timestamp>2018-08-23 08:37:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
