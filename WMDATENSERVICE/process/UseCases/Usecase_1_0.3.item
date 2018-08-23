@@ -108,14 +108,14 @@
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;Fehler&quot;,0);&#10;globalMap.put(&quot;Mail&quot;,0);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;Fehler&quot;,0);&#10;globalMap.put(&quot;Mail&quot;,0);&#10;lobalMap.put(&quot;KID&quot;,0);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/admin/Documents/Usecase/Beispiele PRIIPs/03724230_14_10000_20180712_081116.zip/03724230_14_10000_20180712_081116&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/admin/Documents/Usecase/Beispiele PRIIPs/Extract_XML&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -395,7 +395,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;WKN&quot;,input_row.WKN);&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;WKN&quot;,input_row.WKN);&#10;globalMap.put(&quot;KID&quot;,(Integer)globalMap.get(&quot;KID&quot;)+1);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_1">
@@ -467,7 +467,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//System.out.println(&quot;WKN nicht gefunden&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;WKN nicht gefunden&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
@@ -506,7 +506,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//System.out.println(&quot;Anzahl der KIDs prüfen&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Anzahl der KIDs prüfen&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4">
@@ -1075,11 +1075,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_3" target="tJava_4">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="//(Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;) &lt; 2&#10;&#10;false"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="//(Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;) &lt; 2&#10; (Integer)globalMap.get(&quot;KID&quot;) &lt; 2&#10;//false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If5"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_3" target="tBufferInput_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="//(Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;) == 2&#10;&#10;true"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="//(Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;) == 2&#10;(Integer)globalMap.get(&quot;KID&quot;) == 2&#10;//true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If4"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tChronometerStart_1" offsetLabelX="0" offsetLabelY="0" source="tChronometerStart_1" target="tJava_1">
@@ -1233,13 +1233,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_05f98784-ee6e-4246-8e64-50e2714f8530"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/bdte4wDNtO4lhM7UheRuTwFveI/aJRTcynVPPEMsOGHHeDh9xmX62Hve+b/QBfg5p9tBz4N7DIE
-c01lmqXMUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e35ebac4-d045-400e-b7b3-8b5bc87785c6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kypJlFZ5gXqZG9onSsZQjvI5W61QWbNTmkFVLUUNzhoV+l8MRGt0CviUqjhs80bhJ5Sz3mabXEe7
-QOEY0pQBAQ==</DigestValue></Reference></SignedInfo><SignatureValue>nfRA4A7uG+mKa/KexU/4AlGj2cahLevBjp2nVJUIOKJG9BqnvDr5iPIhz7TEfxTcD/F7tSrygkHw
-UPiiCVc+ipEtpACGQ42weLviIo2x/gCNd63sLBHn0wlIjw1jeW+nQn8mf3b30qpwHb/f6sqaK0dA
-FjUIJ355NP/3dne2yOMIrAhpvkECfcdfHIkkOtnMi5Te08bJg8wJvqH7/nGjgJ9EqaW59ZcvtHW7
-zdCrPOoyeBA6JAtVs6VeAX3Y1KI+knXYjZNcz+XUdl6YBDJtDoOns4QXwVvVZFM7OPaK6b8bbtHm
-rhiMFCdFoQti22ewVsl+l1jrUzDct7T9tJX4bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_efd68471-da93-4d2a-b9a6-a5fdae049b77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uYuJCzNnbxp/ePU8yRugReBd+VnO3dDd35ekcx2/PoDfK4MjqPrJxvpqGAQ3EWTdelbsssfNeWY0
+9T8tL8w8PA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_82a8a8fb-db50-4652-8599-114c9d513125"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a+WFG/L+DkibJZlo0c4ZzkRYCxE7lcT3hXDxIdxu29SUCuAiC6UMn/sqtb6XEHiK/1Dp3VYWavE6
+tnb8RDgDvg==</DigestValue></Reference></SignedInfo><SignatureValue>zA2I+tUCtL1fPTj5srCOlP5GVtngcxNarPzn/FZ4vNdb5cXxK89KzxGqStPbB43lVtNjKn2t3hMF
+t+j3yfgV4SEcT6tvekDtQL7J2z8SAyR9ohdHx0/tXKRpKjbyX130ilpP2P6CdUw5V3phJeEERcUo
+6FT84HQ7fREjaLtHEOXTLuTj5UezqBFECnJken3x+bYdJ1rjca9DPuIZqDaVKG1OFoY6NnZ4QMnB
+rUfKZ4zSTcP2yui4z1qU3XBf4FEuOzqM6vqgMG57oZDSLxeyspcpp6y+/KwGSFhI+AnbzmGM5dZ5
+fYKCkgkKLb7XrSLsKkyGwXHKZQtiaGHYy/4DNQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1263,4 +1263,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e35ebac4-d045-400e-b7b3-8b5bc87785c6" Target="#_05f98784-ee6e-4246-8e64-50e2714f8530"><Timestamp>2018-08-23 08:21:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_82a8a8fb-db50-4652-8599-114c9d513125" Target="#_efd68471-da93-4d2a-b9a6-a5fdae049b77"><Timestamp>2018-08-23 15:31:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
