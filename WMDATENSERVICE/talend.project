@@ -615,4 +615,7 @@
   <TalendProperties:User xmi:id="_AFe5UaBaEeiHE5DYzm7eBg" login="eddyab2@wm.com" firstName="ab2" lastName="eddy" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_cwSeoKBfEeikkLTq92fPnw" login="eddydev@wm.com" firstName="dev" lastName="eddy" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_cwSeoaBfEeikkLTq92fPnw" login="eddyfb@wm.com" firstName="Fachbereich" lastName="Eddy" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_YxcekanjEei6i59S-AzusQ" login="Talenddev1@wm.com" firstName="dev" lastName="Talend" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_YxcekqnjEei6i59S-AzusQ" login="Talendfb@wm.com" firstName="Fachbereich" lastName="Talend" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_Yxcek6njEei6i59S-AzusQ" login="Talenddev2@wm.com" firstName="dev" lastName="Talend" type="DI" additionnalData="{}"/>
 </xmi:XMI>
