@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendJSON:JSONFileConnection Encoding="UTF-8" JSONFilePath="C:/Test_oder/Talend/cBond/cBond_02_out.json" dataPackage="_thXkmqrEEei6-LO6ogluzw" name="cBondEmission" readbyMode="JSONPATH" xmi:id="_thXkAarEEei6-LO6ogluzw">
+    <schema AbsoluteXPathQuery="$.items[*]" LimitBoucle="50" flag="ROOT" xmi:id="_thXkAqrEEei6-LO6ogluzw">
+      <schemaTargets RelativeXPathQuery="id" TagName="id" xmi:id="_thXkA6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="formal_emitent_id" TagName="formal_emitent_id" xmi:id="_thXkBKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="formal_emitent_country" TagName="formal_emitent_country" xmi:id="_thXkBarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="formal_emitent_branch_id" TagName="formal_emitent_branch_id" xmi:id="_thXkBqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="formal_emitent_reg_form_id" TagName="formal_emitent_reg_form_id" xmi:id="_thXkB6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="formal_emitent_type" TagName="formal_emitent_type" xmi:id="_thXkCKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="formal_emitent_name_eng" TagName="formal_emitent_name_eng" xmi:id="_thXkCarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="announced_volume" TagName="announced_volume" xmi:id="_thXkCqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="auction_type_id" TagName="auction_type_id" xmi:id="_thXkC6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="bbgid" TagName="bbgid" xmi:id="_thXkDKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="bbgid_composite" TagName="bbgid_composite" xmi:id="_thXkDarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="bbgid_ticker" TagName="bbgid_ticker" xmi:id="_thXkDqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="bond_type" TagName="bond_type" xmi:id="_thXkD6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="common_code" TagName="common_code" xmi:id="_thXkEKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="common_code_144a" TagName="common_code_144a" xmi:id="_thXkEarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cfi_code" TagName="cfi_code" xmi:id="_thXkEqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cfi_code_144a" TagName="cfi_code_144a" xmi:id="_thXkE6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="convertable" TagName="convertable" xmi:id="_thXkFKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="coupon_type_id" TagName="coupon_type_id" xmi:id="_thXkFarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="updating_date" TagName="updating_date" xmi:id="_thXkFqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cupon_period" TagName="cupon_period" xmi:id="_thXkF6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="currency_id" TagName="currency_id" xmi:id="_thXkGKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="currency_name" TagName="currency_name" xmi:id="_thXkGarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cusip_144a" TagName="cusip_144a" xmi:id="_thXkGqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cusip_regs" TagName="cusip_regs" xmi:id="_thXkG6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="date_of_end_placing" TagName="date_of_end_placing" xmi:id="_thXkHKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="date_of_start_circulation" TagName="date_of_start_circulation" xmi:id="_thXkHarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="date_of_start_placing" TagName="date_of_start_placing" xmi:id="_thXkHqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="dcc_code" TagName="dcc_code" xmi:id="_thXkH6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="dcc_code_144a" TagName="dcc_code_144a" xmi:id="_thXkIKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="document_eng" TagName="document_eng" xmi:id="_thXkIarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="early_redemption_date" TagName="early_redemption_date" xmi:id="_thXkIqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="redemption_price" TagName="redemption_price" xmi:id="_thXkI6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emission_cupon_basis_id" TagName="emission_cupon_basis_id" xmi:id="_thXkJKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emission_cupon_basis_title" TagName="emission_cupon_basis_title" xmi:id="_thXkJarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_id" TagName="emitent_id" xmi:id="_thXkJqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="floating_rate" TagName="floating_rate" xmi:id="_thXkJ6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="income_of_primary_placing" TagName="income_of_primary_placing" xmi:id="_thXkKKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="integral_multiple" TagName="integral_multiple" xmi:id="_thXkKarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="isin_code" TagName="isin_code" xmi:id="_thXkKqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="isin_code_144a" TagName="isin_code_144a" xmi:id="_thXkK6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="isin_code_3" TagName="isin_code_3" xmi:id="_thXkLKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="issue_form_id" TagName="issue_form_id" xmi:id="_thXkLarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="kind_id" TagName="kind_id" xmi:id="_thXkLqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="margin" TagName="margin" xmi:id="_thXkL6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="maturity_date" TagName="maturity_date" xmi:id="_thXkMKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="micex_shortname" TagName="micex_shortname" xmi:id="_thXkMarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="next_replacing_amount" TagName="next_replacing_amount" xmi:id="_thXkMqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="next_replacing_date" TagName="next_replacing_date" xmi:id="_thXkM6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="nominal_price" TagName="nominal_price" xmi:id="_thXkNKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="number_of_emission" TagName="number_of_emission" xmi:id="_thXkNarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="number_of_emission_eng" TagName="number_of_emission_eng" xmi:id="_thXkNqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="outstanding_nominal_price" TagName="outstanding_nominal_price" xmi:id="_thXkN6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="placed_volume" TagName="placed_volume" xmi:id="_thXkOKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="placing_type_id" TagName="placing_type_id" xmi:id="_thXkOarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="price_of_primary_placing" TagName="price_of_primary_placing" xmi:id="_thXkOqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="private_offering_id" TagName="private_offering_id" xmi:id="_thXkO6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="reference_rate_id" TagName="reference_rate_id" xmi:id="_thXkPKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="registration_date" TagName="registration_date" xmi:id="_thXkParEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="settlement_date" TagName="settlement_date" xmi:id="_thXkPqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="ss_tg_countries" TagName="ss_tg_countries" xmi:id="_thXkP6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="ss_tg_qlists" TagName="ss_tg_qlists" xmi:id="_thXkQKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="ss_trading_grounds" TagName="ss_trading_grounds" xmi:id="_thXkQarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="state_reg_number" TagName="state_reg_number" xmi:id="_thXkQqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="status_id" TagName="status_id" xmi:id="_thXkQ6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="subkind_id" TagName="subkind_id" xmi:id="_thXkRKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="subordinated_debt" TagName="subordinated_debt" xmi:id="_thXkRarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="vid_id" TagName="vid_id" xmi:id="_thXkRqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="agents_eng" TagName="agents_eng" xmi:id="_thXkR6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cupon_eng" TagName="cupon_eng" xmi:id="_thXkSKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="indexation_eng" TagName="indexation_eng" xmi:id="_thXkSarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="kind_name_eng" TagName="kind_name_eng" xmi:id="_thXkSqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="placing_type_name_eng" TagName="placing_type_name_eng" xmi:id="_thXkS6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="status_name_eng" TagName="status_name_eng" xmi:id="_thXkTKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_country" TagName="emitent_country" xmi:id="_thXkTarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_country_region_id" TagName="emitent_country_region_id" xmi:id="_thXkTqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_country_subregion_id" TagName="emitent_country_subregion_id" xmi:id="_thXkT6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_email" TagName="emitent_email" xmi:id="_thXkUKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_inn" TagName="emitent_inn" xmi:id="_thXkUarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_inn_ua" TagName="emitent_inn_ua" xmi:id="_thXkUqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_phone" TagName="emitent_phone" xmi:id="_thXkU6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_reg_form_id" TagName="emitent_reg_form_id" xmi:id="_thXkVKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_reg_form_name_eng" TagName="emitent_reg_form_name_eng" xmi:id="_thXkVarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_reg_form_name_rus" TagName="emitent_reg_form_name_rus" xmi:id="_thXkVqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_type" TagName="emitent_type" xmi:id="_thXkV6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_branch_id" TagName="emitent_branch_id" xmi:id="_thXkWKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_country_name_eng" TagName="emitent_country_name_eng" xmi:id="_thXkWarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_adress_eng" TagName="emitent_adress_eng" xmi:id="_thXkWqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_name_eng" TagName="emitent_name_eng" xmi:id="_thXkW6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_site_eng" TagName="emitent_site_eng" xmi:id="_thXkXKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_type_name_eng" TagName="emitent_type_name_eng" xmi:id="_thXkXarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_branch_name_eng" TagName="emitent_branch_name_eng" xmi:id="_thXkXqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="offert_date" TagName="offert_date" xmi:id="_thXkX6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="update_time" TagName="update_time" xmi:id="_thXkYKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="book_closing_date" TagName="book_closing_date" xmi:id="_thXkYarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="book_opening_date" TagName="book_opening_date" xmi:id="_thXkYqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="more_eng" TagName="more_eng" xmi:id="_thXkY6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="mortgage_bonds" TagName="mortgage_bonds" xmi:id="_thXkZKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="restructing" TagName="restructing" xmi:id="_thXkZarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="restructing_date" TagName="restructing_date" xmi:id="_thXkZqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="restructing_more_eng" TagName="restructing_more_eng" xmi:id="_thXkZ6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emitent_full_name_eng" TagName="emitent_full_name_eng" xmi:id="_thXkaKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="perpetual" TagName="perpetual" xmi:id="_thXkaarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="remaining_outstand_amount" TagName="remaining_outstand_amount" xmi:id="_thXkaqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cbrf_listing_lombard_last_date_date" TagName="cbrf_listing_lombard_last_date_date" xmi:id="_thXka6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="gov_program_state_reg_number" TagName="gov_program_state_reg_number" xmi:id="_thXkbKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="private_issue" TagName="private_issue" xmi:id="_thXkbarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="secured_debt" TagName="secured_debt" xmi:id="_thXkbqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="spread_mid_swaps" TagName="spread_mid_swaps" xmi:id="_thXkb6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="spread_us_treasures" TagName="spread_us_treasures" xmi:id="_thXkcKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="eurobonds_nominal" TagName="eurobonds_nominal" xmi:id="_thXkcarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="curr_coupon_rate" TagName="curr_coupon_rate" xmi:id="_thXkcqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="curr_coupon_sum" TagName="curr_coupon_sum" xmi:id="_thXkc6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="reference_rate_name_eng" TagName="reference_rate_name_eng" xmi:id="_thXkdKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="subkind_name_eng" TagName="subkind_name_eng" xmi:id="_thXkdarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="structured_note" TagName="structured_note" xmi:id="_thXkdqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="coupon_type_name_eng" TagName="coupon_type_name_eng" xmi:id="_thXkd6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="vid_name_eng" TagName="vid_name_eng" xmi:id="_thXkeKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="issue_form_name_eng" TagName="issue_form_name_eng" xmi:id="_thXkearEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="private_offering_name_eng" TagName="private_offering_name_eng" xmi:id="_thXkeqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="auction_type_name_eng" TagName="auction_type_name_eng" xmi:id="_thXke6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emission_wkn_code" TagName="emission_wkn_code" xmi:id="_thXkfKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="gov_program_registration_date" TagName="gov_program_registration_date" xmi:id="_thXkfarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="initial_placement_volume" TagName="initial_placement_volume" xmi:id="_thXkfqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emission_coupon_rate" TagName="emission_coupon_rate" xmi:id="_thXkf6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="settlement_duration" TagName="settlement_duration" xmi:id="_thXkgKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emission_wkn_code_144a" TagName="emission_wkn_code_144a" xmi:id="_thXkgarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="usd_volume" TagName="usd_volume" xmi:id="_thXkgqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="offert_eng" TagName="offert_eng" xmi:id="_thXkg6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="offert_date_put" TagName="offert_date_put" xmi:id="_thXkhKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="offert_date_call" TagName="offert_date_call" xmi:id="_thXkharEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="convert_cond_eng" TagName="convert_cond_eng" xmi:id="_thXkhqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="trading_ground_name_eng" TagName="trading_ground_name_eng" xmi:id="_thXkh6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="trading_grounds_full_eng" TagName="trading_grounds_full_eng" xmi:id="_thXkiKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="tradings_maxdate" TagName="tradings_maxdate" xmi:id="_thXkiarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="tradings_indicative_price" TagName="tradings_indicative_price" xmi:id="_thXkiqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="tradings_yield_effect" TagName="tradings_yield_effect" xmi:id="_thXki6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="tradings_duration" TagName="tradings_duration" xmi:id="_thXkjKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="emission_cbr_code" TagName="emission_cbr_code" xmi:id="_thXkjarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="underlying_class_name_eng" TagName="underlying_class_name_eng" xmi:id="_thXkjqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="floor" TagName="floor" xmi:id="_thXkj6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cup" TagName="cup" xmi:id="_thXkkKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="serial_of_emission" TagName="serial_of_emission" xmi:id="_thXkkarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="serial_of_emission_eng" TagName="serial_of_emission_eng" xmi:id="_thXkkqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="securitisation" TagName="securitisation" xmi:id="_thXkk6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="foreign_bond" TagName="foreign_bond" xmi:id="_thXklKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="green_bonds" TagName="green_bonds" xmi:id="_thXklarEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="cdo_bond" TagName="cdo_bond" xmi:id="_thXklqrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="sukuk_bond" TagName="sukuk_bond" xmi:id="_thXkl6rEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="retail_bond" TagName="retail_bond" xmi:id="_thXkmKrEEei6-LO6ogluzw"/>
+      <schemaTargets RelativeXPathQuery="has_default" TagName="has_default" xmi:id="_thXkmarEEei6-LO6ogluzw"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_thXkAarEEei6-LO6ogluzw" name="default" xmi:id="_thXkmqrEEei6-LO6ogluzw">
+    <ownedElement id="_bBE4oKrEEei6-LO6ogluzw" label="metadata" xmi:id="_thXkm6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="id" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXknKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="formal_emitent_id" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXknarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="formal_emitent_country" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXknqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="formal_emitent_branch_id" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkn6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="formal_emitent_reg_form_id" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkoKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="formal_emitent_type" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkoarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="formal_emitent_name_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkoqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="announced_volume" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXko6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="auction_type_id" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkpKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="bbgid" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkparEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="bbgid_composite" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkpqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="bbgid_ticker" length="22" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkp6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="bond_type" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkqKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="common_code" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkqarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="common_code_144a" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkqqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cfi_code" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkq6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cfi_code_144a" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkrKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="convertable" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkrarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="coupon_type_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkrqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="updating_date" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_thXkr6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_period" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXksKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="currency_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXksarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="currency_name" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXksqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cusip_144a" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXks6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cusip_regs" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXktKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="date_of_end_placing" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_thXktarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="date_of_start_circulation" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXktqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="date_of_start_placing" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkt6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="dcc_code" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkuKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="dcc_code_144a" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkuarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="document_eng" length="39" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkuqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="early_redemption_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXku6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="redemption_price" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkvKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_cupon_basis_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkvarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_cupon_basis_title" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkvqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_id" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkv6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="floating_rate" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkwKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="income_of_primary_placing" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkwarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="integral_multiple" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkwqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="isin_code" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkw6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="isin_code_144a" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkxKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="isin_code_3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkxarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="issue_form_id" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkxqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="kind_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkx6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="margin" length="4" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_thXkyKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="maturity_date" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_thXkyarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="micex_shortname" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkyqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="next_replacing_amount" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXky6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="next_replacing_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkzKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nominal_price" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXkzarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="number_of_emission" length="17" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkzqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="number_of_emission_eng" length="17" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXkz6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="outstanding_nominal_price" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk0KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="placed_volume" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk0arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="placing_type_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk0qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="price_of_primary_placing" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk06rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="private_offering_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk1KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="reference_rate_id" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk1arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="registration_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk1qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="settlement_date" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_thXk16rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ss_tg_countries" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk2KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ss_tg_qlists" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk2arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ss_trading_grounds" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk2qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="state_reg_number" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk26rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="status_id" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk3KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="subkind_id" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk3arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="subordinated_debt" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk3qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vid_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk36rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="agents_eng" length="236" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk4KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_eng" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk4arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="indexation_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk4qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="kind_name_eng" length="19" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk46rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="placing_type_name_eng" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk5KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="status_name_eng" length="11" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk5arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_country" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk5qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_country_region_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk56rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_country_subregion_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk6KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_email" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk6arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_inn" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk6qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_inn_ua" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk66rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_phone" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk7KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_reg_form_id" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk7arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_reg_form_name_eng" length="13" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk7qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_reg_form_name_rus" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk76rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_type" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk8KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_branch_id" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk8arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_country_name_eng" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk8qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_adress_eng" length="49" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk86rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_name_eng" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk9KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_site_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk9arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_type_name_eng" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk9qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_branch_name_eng" length="22" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk96rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="offert_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk-KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="update_time" length="19" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_thXk-arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="book_closing_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk-qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="book_opening_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk-6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="more_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk_KrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mortgage_bonds" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk_arEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="restructing" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXk_qrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="restructing_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXk_6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="restructing_more_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlAKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emitent_full_name_eng" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlAarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="perpetual" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlAqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="remaining_outstand_amount" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlA6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cbrf_listing_lombard_last_date_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlBKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gov_program_state_reg_number" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlBarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="private_issue" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlBqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="secured_debt" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlB6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="spread_mid_swaps" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlCKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="spread_us_treasures" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlCarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eurobonds_nominal" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlCqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="curr_coupon_rate" length="7" pattern="&quot;dd-MM-yyyy&quot;" precision="6" talendType="id_Float" xmi:id="_thXlC6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="curr_coupon_sum" length="7" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_thXlDKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="reference_rate_name_eng" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlDarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="subkind_name_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlDqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="structured_note" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlD6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="coupon_type_name_eng" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlEKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vid_name_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlEarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="issue_form_name_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlEqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="private_offering_name_eng" length="17" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlE6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="auction_type_name_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlFKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_wkn_code" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlFarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gov_program_registration_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlFqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="initial_placement_volume" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlF6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_coupon_rate" length="7" pattern="&quot;dd-MM-yyyy&quot;" precision="6" talendType="id_Float" xmi:id="_thXlGKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="settlement_duration" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlGarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_wkn_code_144a" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlGqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="usd_volume" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlG6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="offert_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlHKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="offert_date_put" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlHarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="offert_date_call" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlHqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="convert_cond_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlH6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="trading_ground_name_eng" length="17" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlIKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="trading_grounds_full_eng" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlIarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="tradings_maxdate" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_thXlIqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="tradings_indicative_price" length="7" pattern="&quot;dd-MM-yyyy&quot;" precision="4" talendType="id_Float" xmi:id="_thXlI6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="tradings_yield_effect" length="17" pattern="&quot;dd-MM-yyyy&quot;" precision="16" talendType="id_Float" xmi:id="_thXlJKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="tradings_duration" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlJarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_cbr_code" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlJqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="underlying_class_name_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlJ6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="floor" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlKKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cup" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlKarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="serial_of_emission" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlKqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="serial_of_emission_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_thXlK6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="securitisation" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlLKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="foreign_bond" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlLarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="green_bonds" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlLqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cdo_bond" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlL6rEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="sukuk_bond" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlMKrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="retail_bond" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlMarEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="has_default" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_thXlMqrEEei6-LO6ogluzw" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d0a809a5-62c7-4ec1-bbc3-ceea8e8f7af0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aNnF6HD575YstSX5EDCHN/sPiHh+dOpEk/q3U+2Gl1n5vkq+M+q2sU+zLiyAvPA334W5NppWe5Rr
+dZnzasHhlA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_099343e8-7eef-424f-9a36-e2c7d6de7f7c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hp+cWCVH94T5G5iXNmJofVwJ2bv7xO+Rkc3xtPRpTzn+P/nyZn7rVc7dfAkcJbL89VUjg1ujBU6v
+0WTL/zWS8Q==</DigestValue></Reference></SignedInfo><SignatureValue>GUUeJZaWm7vXzE7D4bVIdz2kqKcdLtfK7ZzHzZxGRC6swA2Q5UlMc9WsoaiwfnCdzMvJh70EA0sb
++QyRv4190PYXD7SyVS55YWQyLASKbDxeWcB9NS3Rl53LdIZB2sfzGUR5GCEfoIRZbkdEpRof/gvY
+d6LX2qEYozYHOvOr6v63jiqPW4d+0QlfU6FTncsQlpgn0oEvluPRyoneAPZkl0CyLDwLJjNnmo/l
+OBKGTB/Co8MQ41y0Y0rZLyzMEZaBU7XTqbfbKvsUsO1YZj1BVBq3GjcCsiKg8hVVrMpJyxUOgPgR
+rkRsoeV9st0j7Ww9JOHJTe1OacoyjDYFc8R12A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_099343e8-7eef-424f-9a36-e2c7d6de7f7c" Target="#_d0a809a5-62c7-4ec1-bbc3-ceea8e8f7af0"><Timestamp>2018-08-28 13:17:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
