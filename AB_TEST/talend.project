@@ -41,7 +41,6 @@
     <ItemsRelations xmi:id="_o6Z0MKqpEeiaEONF0y55Iw">
       <baseItem xmi:id="_o6Z0MaqpEeiaEONF0y55Iw" id="_4n7u8KqnEeiaEONF0y55Iw" version="0.1" type="job"/>
       <relatedItems xmi:id="_o6Z0MqqpEeiaEONF0y55Iw" id="_WvwRoKn5EeidkcOfu_rLJw" version="Latest" type="context"/>
-      <relatedItems xmi:id="_o6Z0M6qpEeiaEONF0y55Iw" id="_j5KF8Kn7EeidkcOfu_rLJw" version="Latest" type="property"/>
       <relatedItems xmi:id="_o6Z0NKqpEeiaEONF0y55Iw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_o6Z0NaqpEeiaEONF0y55Iw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_o6Z0NqqpEeiaEONF0y55Iw" id="TalendString" version="Latest" type="routine"/>
