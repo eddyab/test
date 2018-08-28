@@ -1505,11 +1505,11 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/out.xls&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Test_oder/Talend/cBond/Excel_emmis_out.xls&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="true"/>
     <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
     <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
@@ -1926,7 +1926,7 @@
       <column comment="" key="false" length="9" name="emitent_type_name_eng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="22" name="emitent_branch_name_eng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="offert_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="update_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="update_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="book_closing_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="book_opening_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="more_eng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1995,13 +1995,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_167dcec8-14b1-47ea-8c9b-1e53a2057ebc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8UtSzAVciICJ813zrIZOFiRpnkNyTSAGjlT9xSsqFtDBuR7dPqSmAMnlk60b9GVkV0Q9VKImNyRJ
-YXogik+1fw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_172fa1bd-10f5-40e7-9a62-09b5eb7f47e8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>E3HRJlCMIzjhfPIVBfdIcXHx+HXkfOTncf1p4pFCkRyEJ8sStowCsq8h4sOEgb5oUx1eeG+yHv10
-bGiEQonr0Q==</DigestValue></Reference></SignedInfo><SignatureValue>iD6cJpc13tzJyhSFX8UEs6C5Cnsi4mSaMY4fCcQRKZ12Uro3iGXkoZn6etFw3Mn5L01HVMjDUm4p
-t/qHAbpbmk0egMF3UhqlxoCNsapDkIzPLrrZyWwWSQ3A3/Kk7uJ7sdlttZqZE7U3sI0fMcmy3mMj
-Ibw/AjLOLL+mcedkhSWuaGt0bIN9zcGDNnyh25/FMi3svN7JeFGGbahcffeXm6DT85nm2sU30X9n
-nJOoMRm4J0CMKH90H3XjxX8tB8v7z+09skvoChOnt6q/G9Uja7cafClj/QDj3ZMz3UEybDKwbPSV
-PuAU7d9Vlfoh5Lqaa9ZXbtIcARJ++pnWlJCBcQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b2ad2ceb-fe2b-4c94-b9fa-4012ac5df17b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+bV2cxznus6udYGaM60Ed70oche1QwlKITl9B2B2/xajHXxuu3ulww6tTbQaPcfjL7unkxJxAehg
+HLlKmW5O/Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_db24ae1d-6560-4804-97df-2028720c611d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I4H8ywccGDYea6ureSToN2vu8mc+ju6n6nax4qlGeuYAhy0GdBZZhyEB1I3xYYMZ5J5SPHnO2dtN
+1b82Vj8mow==</DigestValue></Reference></SignedInfo><SignatureValue>FUm7kAQ+IBmilH5P3CkBjLdSgXEPofbDZME2usLf+UdkUB1q/DozNfnAH7QTcYIM1SCHMPVykXkF
+2KE6Vvs6aQrZNid6Q1D79OqbWn6ZCEAp+UfWWpZ8HnEt/zv1eLUF339cLk3w5d3gNSpAuuz+xaZZ
+vthmc1vz/63Dpl+gZO8jBytdgQFZwkSG7m4jW+8g1i65Cakahe+bOKliv7Lpu0jqKJX5ZPUJibpB
+s8LD2Svc5Fdce0OhEYcj+o1AQR+zBHRmj4KuFj+TFDAD80YjzFTKFDtZ/hG5urqZNIOH1gNQaHd3
+WUPIW49Ga9Aj+ScCu8/QtdPwn86R3UMEBPTeqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2025,4 +2025,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_172fa1bd-10f5-40e7-9a62-09b5eb7f47e8" Target="#_167dcec8-14b1-47ea-8c9b-1e53a2057ebc"><Timestamp>2018-08-28 13:19:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_db24ae1d-6560-4804-97df-2028720c611d" Target="#_b2ad2ceb-fe2b-4c94-b9fa-4012ac5df17b"><Timestamp>2018-08-28 13:25:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
