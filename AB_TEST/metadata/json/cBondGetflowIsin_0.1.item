@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendJSON:JSONFileConnection Encoding="UTF-8" JSONFilePath="C:/Test_oder/Talend/cBond/cBond_out.json" dataPackage="_j5T286n7EeidkcOfu_rLJw" name="cBondGetflowIsin" readbyMode="JSONPATH" xmi:id="_j5T28Kn7EeidkcOfu_rLJw">
-    <schema AbsoluteXPathQuery="$.items[*]" LimitBoucle="50" xmi:id="_j5T28an7EeidkcOfu_rLJw">
+  <TalendJSON:JSONFileConnection ContextId="_WvwRoKn5EeidkcOfu_rLJw" ContextMode="true" Encoding="context.cBondGetflowIsin_Encoding" JSONFilePath="context.cBondGetflowIsin_FilePath" contextName="Default" dataPackage="_j5T286n7EeidkcOfu_rLJw" name="cBondGetflowIsin" readbyMode="JSONPATH" xmi:id="_j5T28Kn7EeidkcOfu_rLJw">
+    <schema AbsoluteXPathQuery="context.cBondGetflowIsin_XPathQuery" LimitBoucle="50" xmi:id="_j5T28an7EeidkcOfu_rLJw">
       <schemaTargets RelativeXPathQuery="id" TagName="id" xmi:id="_iOhd8KqcEeiaEONF0y55Iw"/>
       <schemaTargets RelativeXPathQuery="actual_payment_date" TagName="actual_payment_date" xmi:id="_mPpxEKqcEeiaEONF0y55Iw"/>
       <schemaTargets RelativeXPathQuery="coupon_num" TagName="coupon_num" xmi:id="_m4xmkKqcEeiaEONF0y55Iw"/>
@@ -63,13 +63,13 @@
       <feature label="updating_date" length="19" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_0g_kSqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8f1f20e4-2db4-46d8-b850-c42324335813"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H8vjuSlTNd1uNbFLS8RJmYPpJPfwowpVVC2mzYdxJjfrn0QBsbKNtSlr+8fJJ+HVVVzBUBHYhnzA
-MadaiAQwWA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_24d246e6-b9ec-428d-80b5-bb3dbb65fd03"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HQX8LiEVVsEOFjFjqkLA1VcYBeqLwlTygX2UyOXl6Twjiw1eoPNfng+ucCzZI95avq9//uWNeRup
-VCF8ENmLXw==</DigestValue></Reference></SignedInfo><SignatureValue>0uWklmNWxVjekoqdgOIyht3+BL0wEAABeOjhZi2w2YyqdQk44Sp++EaBkpDZ4HYGNq/Xb9uU2Cft
-Kwv6fPN2uX2DxYz5GyWinCkzuRsi8FxGRnU2CT9ThTVgxkXGwUKSRKvToHwaEx7fKJOpVKEgwpLI
-Rgec+QnD8nS6o63uBBCHKmNhsLYZBxhJHjq+HYFcyhle7vijFfoo9DNWo4fhcCE2VhzJQwgchLLm
-pdqIXCA497DBd+WgaZzjWc4XOAXe/NjNV9CkGPZ8pBoJZ2b8H6zQSCBKG+nqks60uWbKC2GBerP7
-oKTK9dLX8CF1Fq1fCWhSHwKx1M4xlxiNC9GSaA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1136953a-ec97-4d8e-a19c-1cd1a14d168c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EVHDE9Dcq0cYXo6BfQzLZQkskWizcCeS1hdxFYJibGXOEmR0jz2kwcZ4wpW7ptWldO7jraN7w29C
+DZd+VaTVxA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d87fbdc2-0003-4c03-bc9d-064644f1f34c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kdVxvKSo6vmVuE9Cl3kyENdasyLRUe6r04xeRuL6w4malIvvA+Awq08Q+VNmhhJ+YjpDnsw+sGIF
+xY4XWWF78g==</DigestValue></Reference></SignedInfo><SignatureValue>Ngb/lnzncNpEDT+UYNzhDMhAkrhW/1SjUZ0WtbxA4vq6Oe9zcuzp1S1uze3Y6H4V9+aPS7qJp+bM
+PjwT1/tyK1wk81QdXxvUsDJgf+fOFMBB5VDe1gkhHDI7gIKA8bg7OY4V90Ov+LV2jxs5G5elXYTn
+XH3dIzad7knN39LgukpwH4ln5smnzqmDeTb3zyInadD1e3S+aLK1gLbT40jjO8yss6Y5feIFuJGq
+REn0OAdaOq2GRaUz5EXXBYgRdHO/spCUha0W8xB4dj6NOqEPczoyN/O2BnmOW+3nGLkmeOM9fkTk
+lpMhdfwDMXHLLYdYVuxfxnL/7APv0uR9OXw5Eg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -93,4 +93,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_24d246e6-b9ec-428d-80b5-bb3dbb65fd03" Target="#_8f1f20e4-2db4-46d8-b850-c42324335813"><Timestamp>2018-08-28 09:43:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d87fbdc2-0003-4c03-bc9d-064644f1f34c" Target="#_1136953a-ec97-4d8e-a19c-1cd1a14d168c"><Timestamp>2018-08-28 09:59:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
