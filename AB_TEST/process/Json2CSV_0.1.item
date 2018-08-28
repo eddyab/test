@@ -108,426 +108,107 @@
     <routinesParameter id="_Z5_ygKBVEei0eabqj3vx0g" name="TalendStringUtil"/>
     <routinesParameter id="_Z55E0KBVEei0eabqj3vx0g" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_1"/>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractJSONFields_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bxBBcKq8Eei6-LO6ogluzw"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_j5KF8Kn7EeidkcOfu_rLJw - metadataCBondJson"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_bxBBcKq8Eei6-LO6ogluzw - metadata"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
-    <elementParameter field="CHECK" name="USEURL" value="false"/>
-    <elementParameter field="TEXT" name="URLPATH" show="false" value="context.cBondGetflowIsin_FilePath"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Test_oder/Talend/cBond/cBond_out_1.json&quot;"/>
-    <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="context.cBondGetflowIsin_XPathQuery"/>
-    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="$items[*]"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value=""/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;$&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="actual_payment_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="coupon_num"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_eurobonds_nominal"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_integral_multiple"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="days_beetwen_coupons"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_region_id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_subregion_id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_integral_multiple"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_isin_code"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_kind_id"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_nominal_price"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="more_eng"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_start_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_stop_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="record_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_eurobonds_nominal"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_integral_multiple"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemtion"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="updating_date"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="QUERY" value="&quot;count&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total"/>
+      <elementValue elementRef="QUERY" value="&quot;total&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="limit"/>
+      <elementValue elementRef="QUERY" value="&quot;limit&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="offset"/>
+      <elementValue elementRef="QUERY" value="&quot;offset&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exec_time"/>
+      <elementValue elementRef="QUERY" value="&quot;exec_time&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data"/>
+      <elementValue elementRef="QUERY" value="&quot;items[*]&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="meta"/>
+      <elementValue elementRef="QUERY" value="&quot;meta&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
     </elementParameter>
-    <elementParameter field="TABLE" name="MAPPING_JSONPATH">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="QUERY" value="&quot;id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="actual_payment_date"/>
-      <elementValue elementRef="QUERY" value="&quot;actual_payment_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="coupon_num"/>
-      <elementValue elementRef="QUERY" value="&quot;coupon_num&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_rate&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate_date"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_rate_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_sum&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_eurobonds_nominal"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_sum_eurobonds_nominal&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_integral_multiple"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_sum_integral_multiple&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
-      <elementValue elementRef="QUERY" value="&quot;date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="days_beetwen_coupons"/>
-      <elementValue elementRef="QUERY" value="&quot;days_beetwen_coupons&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_country_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_region_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_country_region_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_subregion_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_country_subregion_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_integral_multiple"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_integral_multiple&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_isin_code"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_isin_code&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_kind_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_kind_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_nominal_price"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_nominal_price&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="more_eng"/>
-      <elementValue elementRef="QUERY" value="&quot;more_eng&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_start_date"/>
-      <elementValue elementRef="QUERY" value="&quot;nontrading_start_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_stop_date"/>
-      <elementValue elementRef="QUERY" value="&quot;nontrading_stop_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="record_date"/>
-      <elementValue elementRef="QUERY" value="&quot;record_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_eurobonds_nominal"/>
-      <elementValue elementRef="QUERY" value="&quot;redemption_eurobonds_nominal&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_integral_multiple"/>
-      <elementValue elementRef="QUERY" value="&quot;redemption_integral_multiple&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemtion"/>
-      <elementValue elementRef="QUERY" value="&quot;redemtion&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="QUERY" value="&quot;start_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="updating_date"/>
-      <elementValue elementRef="QUERY" value="&quot;updating_date&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="QUERY" value="&quot;id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="actual_payment_date"/>
-      <elementValue elementRef="QUERY" value="&quot;actual_payment_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="coupon_num"/>
-      <elementValue elementRef="QUERY" value="&quot;coupon_num&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_rate&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate_date"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_rate_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_sum&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_eurobonds_nominal"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_sum_eurobonds_nominal&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_integral_multiple"/>
-      <elementValue elementRef="QUERY" value="&quot;cupon_sum_integral_multiple&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
-      <elementValue elementRef="QUERY" value="&quot;date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="days_beetwen_coupons"/>
-      <elementValue elementRef="QUERY" value="&quot;days_beetwen_coupons&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_country_id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_region_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_country_region_id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_subregion_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_country_subregion_id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_emitent_id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_integral_multiple"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_integral_multiple&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_isin_code"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_isin_code&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_kind_id"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_kind_id&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_nominal_price"/>
-      <elementValue elementRef="QUERY" value="&quot;emission_nominal_price&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="more_eng"/>
-      <elementValue elementRef="QUERY" value="&quot;more_eng&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_start_date"/>
-      <elementValue elementRef="QUERY" value="&quot;nontrading_start_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_stop_date"/>
-      <elementValue elementRef="QUERY" value="&quot;nontrading_stop_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="record_date"/>
-      <elementValue elementRef="QUERY" value="&quot;record_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_eurobonds_nominal"/>
-      <elementValue elementRef="QUERY" value="&quot;redemption_eurobonds_nominal&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_integral_multiple"/>
-      <elementValue elementRef="QUERY" value="&quot;redemption_integral_multiple&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemtion"/>
-      <elementValue elementRef="QUERY" value="&quot;redemtion&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="QUERY" value="&quot;start_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="updating_date"/>
-      <elementValue elementRef="QUERY" value="&quot;updating_date&quot;"/>
-      <elementValue elementRef="NODECHECK" value=""/>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="QUERY" value="&quot;count&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total"/>
+      <elementValue elementRef="QUERY" value="&quot;total&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="limit"/>
+      <elementValue elementRef="QUERY" value="&quot;limit&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="offset"/>
+      <elementValue elementRef="QUERY" value="&quot;offset&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exec_time"/>
+      <elementValue elementRef="QUERY" value="&quot;exec_time&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data"/>
+      <elementValue elementRef="QUERY" value="&quot;items[*]&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="meta"/>
+      <elementValue elementRef="QUERY" value="&quot;meta&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_j5KF8Kn7EeidkcOfu_rLJw - metadataCBondJson"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_DATE" show="false" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.cBondGetflowIsin_Encoding"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
-    <elementParameter field="TEXT" name="LABEL" value="cBondGetflowIsin"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_bxBBcKq8Eei6-LO6ogluzw - metadata"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value="tExtractJSONFields_1"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="cBondGetflow"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadataCBondJson" name="tFileInputJSON_1">
-      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="actual_payment_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="coupon_num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="cupon_rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="cupon_rate_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="cupon_sum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="cupon_sum_eurobonds_nominal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="cupon_sum_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="days_beetwen_coupons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="emission_emitent_country_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_emitent_country_region_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_emitent_country_subregion_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="emission_emitent_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="emission_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="emission_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="emission_isin_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_kind_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="emission_nominal_price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="more_eng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="nontrading_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="nontrading_stop_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="record_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemption_eurobonds_nominal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemption_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemtion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="updating_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="2" name="count" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="limit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="offset" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="exec_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="8039" name="data" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="92" name="meta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="metadataCBondJson" name="REJECT">
-      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="actual_payment_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="coupon_num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="cupon_rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="cupon_rate_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="cupon_sum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="cupon_sum_eurobonds_nominal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="cupon_sum_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="days_beetwen_coupons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="emission_emitent_country_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_emitent_country_region_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_emitent_country_subregion_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="emission_emitent_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="emission_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="emission_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="emission_isin_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_kind_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="emission_nominal_price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="more_eng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="nontrading_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="nontrading_stop_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="record_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemption_eurobonds_nominal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemption_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemtion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="updating_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="count" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="limit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="offset" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="exec_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="8039" name="data" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="92" name="meta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Test_oder/Talend/cBond/out.xls&quot;"/>
-    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;get_flow&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
-    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
-    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
-    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
-    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="actual_payment_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="coupon_num"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_rate_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_eurobonds_nominal"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cupon_sum_integral_multiple"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="days_beetwen_coupons"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_region_id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_country_subregion_id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_emitent_id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_integral_multiple"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_isin_code"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_kind_id"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="emission_nominal_price"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="more_eng"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_start_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nontrading_stop_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="record_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_eurobonds_nominal"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemption_integral_multiple"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="redemtion"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="updating_date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadataCBondJson" name="tFileOutputExcel_1">
-      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="actual_payment_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="coupon_num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="cupon_rate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="cupon_rate_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="cupon_sum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="cupon_sum_eurobonds_nominal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="cupon_sum_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="days_beetwen_coupons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="emission_emitent_country_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_emitent_country_region_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_emitent_country_subregion_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="emission_emitent_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="emission_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="emission_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="emission_isin_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="emission_kind_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="emission_nominal_price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="more_eng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="nontrading_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="nontrading_stop_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="record_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemption_eurobonds_nominal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemption_integral_multiple" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="redemtion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="updating_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputJSON_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputJSON_1" target="tFileOutputExcel_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractJSONFields_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_db275299-082d-4bb9-ac86-2e9ca58f5ea5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pRpbVA3wVs1HMirEoI809zlIXkZDKOeCHS83K/jwUC8tsjKzekE8Tsm1ceiim4HO53WZkq9EJTGs
-m8PhQNkoKA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8cba2bb0-5625-4c7d-932c-8898b5da491c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lya+o6FIOiNExBPd2bT2gjqyR3kxgcnBr/O4yuzLZ9yEe9gIz2cUCqwBuH9+1aWIFFhinr8kfPj0
-xMnswN6SsA==</DigestValue></Reference></SignedInfo><SignatureValue>cAK6UNMaV6NVuClqSSnCUCNjwlM7R6o/lCgwf6dGaZyPNxe3lSCM2E+CEJMsF7VdvWM5jHAiTuqo
-Zf2njzKNnszpCpMFTjw0n31SD/9aAY9JI13siHTorCp2TPItrHqAHyoE4NB4USz9d9EfwsnYOAtM
-GSK9h6lZp2piaByAC975/wGwRFiDaVECsWlGGlAsC16G4ppxtghUj8lCQ6pOS9qytD/Zp4UbplUu
-oTkLLIXWE63bNHTBHBEvbSGJdi+5TWNEXmkqjj1hIhFlGnJP1dYAJkSDwlMzTACtIohRl3ZNwH+S
-+blswgR6ETn5hojgni6SNQHy0sOprF2MtTrd/Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_111b07bf-7aea-4ff4-8379-08c69025a681"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ceo6KsFUENKp2VtUL9RmJ09VKNoEZ0bJhBTq+lk0cDoHHRU8fzZMIFppHBRw9oFCI1s+Dfhw0jUp
+CroYWiXh4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cd94973f-f77f-4633-a82b-1ef7cc7cad0b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qjgStko5XD4mH3qTfBIPFPI2bFkWoITNF6ZOERO8Z426vAlAR+omX9/8N4dQ/J8UaESB8gD+RzUf
+4LRY07DRxQ==</DigestValue></Reference></SignedInfo><SignatureValue>ZY37wdFqnUpSDc3R/cAF3L8sTpzrKHvtJ72N6rPdAG1IL41PbNvs1D2Sj7jrso1jnTFgxR/iU9HC
+TP81hFSxC1ak3YDmU0czoOQ/OJdUCgNJKBbdyyb03f6V5taqcta5zL0pRdnMJRjlPzE0yu8c1QXI
+9dyvya3OYX88ofBKOLSCFQOKilA/8tyMimXySfuFyBphb7Uw/LCPQZ0r5RCClkiT6v6SczNxvvgm
+TpLQnbPr5SpQ2VLgi3b3JmHu8l+fLMnChbZQu5dTwdCjXhGlIuAFkredm4+XswojEOzN/q9sTW+7
+KFVFP9sYMJJdDX+E6qLFH8YxhcsrM0Vjqhl36Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -551,4 +232,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8cba2bb0-5625-4c7d-932c-8898b5da491c" Target="#_db275299-082d-4bb9-ac86-2e9ca58f5ea5"><Timestamp>2018-08-28 12:05:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cd94973f-f77f-4633-a82b-1ef7cc7cad0b" Target="#_111b07bf-7aea-4ff4-8379-08c69025a681"><Timestamp>2018-08-28 12:19:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
