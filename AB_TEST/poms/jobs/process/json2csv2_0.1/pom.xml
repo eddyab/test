@@ -9,9 +9,9 @@
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.ab_test.job</groupId>
-  <artifactId>cBond</artifactId>
+  <artifactId>json2csv2</artifactId>
   <version>0.1.0</version>
-  <name>AB_TEST cBond-0.1.0 (0.1,Job Designs)</name>
+  <name>AB_TEST json2csv2-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,11 +19,11 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>ab_test</talend.project.name.lowercase>
-    <talend.job.path>ab_test/cbond_0_1</talend.job.path>
+    <talend.job.path>ab_test/json2csv2_0_1</talend.job.path>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>AB_TEST</talend.project.name>
     <talend.product.version>7.0.1.20180411_1414</talend.product.version>
-    <talend.job.finalName>cbond_0_1</talend.job.finalName>
+    <talend.job.finalName>json2csv2_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ab_test.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ab_test.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,8 +33,8 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>cBond</talend.job.name>
-    <talend.job.id>_QpSKAKn2EeidkcOfu_rLJw</talend.job.id>
+    <talend.job.name>json2csv2</talend.job.name>
+    <talend.job.id>_0oLOoKrEEei6-LO6ogluzw</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.framework></talend.job.framework>
     <talend.job.type>Standard</talend.job.type>
@@ -42,12 +42,42 @@
   <dependencies>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>accessors-smart-1.1</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>dom4j-1.6.1</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>json-path-2.1.0</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>json-smart-2.2.1</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jxl</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>log4j-1.2.16</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>slf4j-api-1.7.5</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>slf4j-log4j12-1.7.5</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>

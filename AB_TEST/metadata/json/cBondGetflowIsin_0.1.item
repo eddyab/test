@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendJSON:JSONFileConnection Encoding="UTF-8" JSONFilePath="C:/Users/admin/Desktop/cBond_out.json" dataPackage="_j5T286n7EeidkcOfu_rLJw" name="cBondGetflowIsin" readbyMode="JSONPATH" xmi:id="_j5T28Kn7EeidkcOfu_rLJw">
-    <schema LimitBoucle="50" xmi:id="_j5T28an7EeidkcOfu_rLJw">
-      <schemaTargets RelativeXPathQuery="$" TagName="items" xmi:id="_j5T28qn7EeidkcOfu_rLJw"/>
+  <TalendJSON:JSONFileConnection ContextId="_WvwRoKn5EeidkcOfu_rLJw" ContextMode="true" Encoding="context.cBondGetflowIsin_Encoding" JSONFilePath="context.cBondGetflowIsin_FilePath" contextName="Default" dataPackage="_j5T286n7EeidkcOfu_rLJw" name="cBondGetflowIsin" readbyMode="JSONPATH" xmi:id="_j5T28Kn7EeidkcOfu_rLJw">
+    <schema AbsoluteXPathQuery="context.cBondGetflowIsin_XPathQuery" LimitBoucle="50" xmi:id="_j5T28an7EeidkcOfu_rLJw">
+      <schemaTargets RelativeXPathQuery="id" TagName="id" xmi:id="_iOhd8KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="actual_payment_date" TagName="actual_payment_date" xmi:id="_mPpxEKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="coupon_num" TagName="coupon_num" xmi:id="_m4xmkKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="cupon_rate" TagName="cupon_rate" xmi:id="_nLsikKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="cupon_rate_date" TagName="cupon_rate_date" xmi:id="_ndL7MKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="cupon_sum" TagName="cupon_sum" xmi:id="_nsFS0KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="cupon_sum_eurobonds_nominal" TagName="cupon_sum_eurobonds_nominal" xmi:id="_n5El8KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="cupon_sum_integral_multiple" TagName="cupon_sum_integral_multiple" xmi:id="_oOXggKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="date" TagName="date" xmi:id="_o3f9EKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="days_beetwen_coupons" TagName="days_beetwen_coupons" xmi:id="_pKfxkKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_emitent_country_id" TagName="emission_emitent_country_id" xmi:id="_peY98KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_emitent_country_region_id" TagName="emission_emitent_country_region_id" xmi:id="_py5OUKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_emitent_country_subregion_id" TagName="emission_emitent_country_subregion_id" xmi:id="_qJGH0KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_emitent_id" TagName="emission_emitent_id" xmi:id="_qzZpEKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_id" TagName="emission_id" xmi:id="_rKky8KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_integral_multiple" TagName="emission_integral_multiple" xmi:id="_riKzkKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_isin_code" TagName="emission_isin_code" xmi:id="_ryqtsKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_kind_id" TagName="emission_kind_id" xmi:id="_sGPJ8KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="emission_nominal_price" TagName="emission_nominal_price" xmi:id="_tO7QUKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="more_eng" TagName="more_eng" xmi:id="_tp7xUKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="nontrading_start_date" TagName="nontrading_start_date" xmi:id="_vnzMMKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="nontrading_stop_date" TagName="nontrading_stop_date" xmi:id="_wh6rEKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="record_date" TagName="record_date" xmi:id="_x4NIkKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="redemption_eurobonds_nominal" TagName="redemption_eurobonds_nominal" xmi:id="_ydm7sKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="redemption_integral_multiple" TagName="redemption_integral_multiple" xmi:id="_0KAMEKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="redemtion" TagName="redemtion" xmi:id="_0pIYEKqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="start_date" TagName="start_date" xmi:id="_1Etg0KqcEeiaEONF0y55Iw"/>
+      <schemaTargets RelativeXPathQuery="updating_date" TagName="updating_date" xmi:id="_1c7zkKqcEeiaEONF0y55Iw"/>
     </schema>
   </TalendJSON:JSONFileConnection>
   <orgomg.cwm.resource.record:RecordFile dataManager="_j5T28Kn7EeidkcOfu_rLJw" name="default" xmi:id="_j5T286n7EeidkcOfu_rLJw">
     <ownedElement id="_AMviQKn6EeidkcOfu_rLJw" label="metadataCBondJson" xmi:id="_j5dA4Kn7EeidkcOfu_rLJw" xsi:type="TalendMetadata:MetadataTable">
       <feature label="id" name="id" talendType="id_String" xmi:id="_j5dA4an7EeidkcOfu_rLJw" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="allesAndere" name="allesAndere" talendType="id_String" xmi:id="_j5dA4qn7EeidkcOfu_rLJw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="actual_payment_date" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_0g_kMKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="coupon_num" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kMaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_rate" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kMqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_rate_date" length="19" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kM6qmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_sum" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kNKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_sum_eurobonds_nominal" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kNaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cupon_sum_integral_multiple" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kNqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="date" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_0g_kN6qmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="days_beetwen_coupons" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kOKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_emitent_country_id" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kOaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_emitent_country_region_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kOqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_emitent_country_subregion_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kO6qmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_emitent_id" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kPKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_id" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kPaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_integral_multiple" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kPqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_isin_code" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kP6qmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_kind_id" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kQKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="emission_nominal_price" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_0g_kQaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="more_eng" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kQqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nontrading_start_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kQ6qmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nontrading_stop_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kRKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="record_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kRaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="redemption_eurobonds_nominal" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kRqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="redemption_integral_multiple" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kR6qmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="redemtion" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_0g_kSKqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="start_date" length="19" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_0g_kSaqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="updating_date" length="19" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Date" xmi:id="_0g_kSqqmEeiaEONF0y55Iw" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b3a0c05b-45e6-4582-a8cf-0160e6a5ec1c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S2r0JkldMGiVo9DiFbW2/S7wSNImCF+SZZ0sm/CTiVGR9oOuysR8bVmu4p03DkToxvJCAvbVwgHJ
-dGT4/LzhGQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_abf90690-bd39-4a2b-825f-b59d4bdc45ce"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YGwvQYbVvfKSEC5BPrTi5a/h7KlFc/um8RoXQgwUDOKa7QQUPAMcDhHsNr3j+mShWkJplGjVjlKZ
-En1AmZy4fg==</DigestValue></Reference></SignedInfo><SignatureValue>ouZRMenqUhiA+EYyL00cZTXK9zocn3vCgxbH5pRNTAjPXsr+HR+oJt+6kM8LXVqEw5nGdEXvKhw7
-cq/j6/56XHcjMnHJ0mDrjxsOF2640IyoblWpJi+jwCT9DojK82ibkO9ksRbrlBsw6pIAkJ2AmOOG
-DbkMMWK4wLrnqm/OlVC8V6PI6rg2YQzsd6C0CQhj1OJdGLJk+9FJLAKFMV6IMgQPx8c2H/Lx6uLU
-3vZkBICdXf86MOkUGBByqHELDRKcfmUd+67IKASU0wvrua/UWLDiG3Aocq5dQTALhuXzXg4R546O
-nhDUR7LoYyEERQvBmaSqMDU+T/QYLf76+wz+mg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1136953a-ec97-4d8e-a19c-1cd1a14d168c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EVHDE9Dcq0cYXo6BfQzLZQkskWizcCeS1hdxFYJibGXOEmR0jz2kwcZ4wpW7ptWldO7jraN7w29C
+DZd+VaTVxA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d87fbdc2-0003-4c03-bc9d-064644f1f34c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kdVxvKSo6vmVuE9Cl3kyENdasyLRUe6r04xeRuL6w4malIvvA+Awq08Q+VNmhhJ+YjpDnsw+sGIF
+xY4XWWF78g==</DigestValue></Reference></SignedInfo><SignatureValue>Ngb/lnzncNpEDT+UYNzhDMhAkrhW/1SjUZ0WtbxA4vq6Oe9zcuzp1S1uze3Y6H4V9+aPS7qJp+bM
+PjwT1/tyK1wk81QdXxvUsDJgf+fOFMBB5VDe1gkhHDI7gIKA8bg7OY4V90Ov+LV2jxs5G5elXYTn
+XH3dIzad7knN39LgukpwH4ln5smnzqmDeTb3zyInadD1e3S+aLK1gLbT40jjO8yss6Y5feIFuJGq
+REn0OAdaOq2GRaUz5EXXBYgRdHO/spCUha0W8xB4dj6NOqEPczoyN/O2BnmOW+3nGLkmeOM9fkTk
+lpMhdfwDMXHLLYdYVuxfxnL/7APv0uR9OXw5Eg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -40,4 +93,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_abf90690-bd39-4a2b-825f-b59d4bdc45ce" Target="#_b3a0c05b-45e6-4582-a8cf-0160e6a5ec1c"><Timestamp>2018-08-27 13:17:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d87fbdc2-0003-4c03-bc9d-064644f1f34c" Target="#_1136953a-ec97-4d8e-a19c-1cd1a14d168c"><Timestamp>2018-08-28 09:59:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

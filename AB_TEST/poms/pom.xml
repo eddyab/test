@@ -11,6 +11,10 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/cbond_0.1</module>
+    <module>jobs/process/demo/onboardingdemojob_0.1</module>
+    <module>jobs/process/json2csv_0.1</module>
+    <module>jobs/process/cbond_02_0.1</module>
+    <module>jobs/process/json2csv2_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AB_TEST</talend.project.name>
